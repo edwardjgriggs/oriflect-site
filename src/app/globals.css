@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sapphire: #0A2463;
+  --color-sapphire-800: #0d2d78;
+  --color-sapphire-900: #06143a;
+  --color-gold: #D4A843;
+  --color-gold-light: #e0be6e;
+  --color-ember: #E8651A;
+  --color-charcoal: #1C1C1E;
+  --color-ivory: #F8F6F0;
+  --color-ivory-dark: #eceae3;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ivory);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-light);
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--color-gold) var(--color-ivory);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-charcoal);
+  background: var(--color-ivory);
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #D4A843, #E8651A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Glowing orbs for hero */
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-40px, 30px) scale(0.9); }
+  66% { transform: translate(50px, -20px) scale(1.1); }
+}
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(20px, 40px) scale(1.05); }
+  66% { transform: translate(-30px, -30px) scale(0.95); }
+}
+.orb-1 { animation: float1 8s ease-in-out infinite; }
+.orb-2 { animation: float2 10s ease-in-out infinite; }
+.orb-3 { animation: float3 12s ease-in-out infinite; }
+
+/* Glow button effect */
+.btn-glow:hover {
+  box-shadow: 0 0 25px rgba(212, 168, 67, 0.5);
+}
+.btn-ember-glow:hover {
+  box-shadow: 0 0 25px rgba(232, 101, 26, 0.4);
+}
