@@ -33,10 +33,12 @@ export default function Navbar() {
 
   const handleNavClick = () => setMobileOpen(false);
 
+  const showSolid = scrolled || mobileOpen;
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+        showSolid
           ? "bg-ivory/95 backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
@@ -44,13 +46,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
+          <a href="#" className="flex items-center gap-2 group" onClick={handleNavClick}>
             <div className="w-9 h-9 rounded-lg bg-sapphire-900 flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
               <span className="text-gold font-bold text-lg">O</span>
             </div>
             <span
               className={`font-semibold text-lg tracking-tight transition-colors ${
-                scrolled ? "text-sapphire-900" : "text-white"
+                showSolid ? "text-sapphire-900" : "text-white"
               }`}
             >
               Oriflect
@@ -87,7 +89,7 @@ export default function Navbar() {
           >
             <svg
               className={`w-6 h-6 transition-colors ${
-                scrolled ? "text-charcoal" : "text-white"
+                showSolid ? "text-charcoal" : "text-white"
               }`}
               fill="none"
               viewBox="0 0 24 24"
@@ -114,13 +116,13 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden fixed inset-0 top-16 bg-white z-40 transition-all duration-300 ${
+        className={`md:hidden fixed inset-0 top-16 bg-ivory z-40 transition-all duration-300 ${
           mobileOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
+            ? "opacity-100 pointer-events-auto translate-y-0"
+            : "opacity-0 pointer-events-none -translate-y-4"
         }`}
       >
-        <div className="flex flex-col items-center gap-6 pt-10">
+        <div className="flex flex-col items-center gap-6 pt-10 px-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -134,7 +136,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={handleNavClick}
-            className="bg-gold hover:bg-gold-dark text-white font-semibold px-8 py-3 rounded-lg transition-all mt-2"
+            className="w-full max-w-xs text-center bg-gold hover:bg-gold-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all mt-2"
           >
             Book a Call
           </a>
