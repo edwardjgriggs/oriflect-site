@@ -34,11 +34,8 @@ export default function Results() {
   const revealRef = useReveal();
 
   return (
-    <section id="results" className="relative overflow-hidden">
-      {/* Top gradient bridge from white to sapphire */}
-      <div className="h-20 md:h-28 bg-gradient-to-b from-white via-white/40 to-sapphire-900" />
-
-      <div className="relative bg-sapphire-900 py-16 md:py-24">
+    <section id="results" className="relative overflow-hidden bg-sapphire-900">
+      <div className="relative py-20 md:py-28">
         {/* Background effects */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-0 left-1/4 w-80 h-80 bg-sapphire-700/20 rounded-full blur-3xl" />
@@ -67,9 +64,6 @@ export default function Results() {
           </div>
         </div>
       </div>
-
-      {/* Bottom gradient bridge from sapphire to ivory */}
-      <div className="h-20 md:h-28 bg-gradient-to-b from-sapphire-900 via-sapphire-900/40 to-ivory" />
     </section>
   );
 }

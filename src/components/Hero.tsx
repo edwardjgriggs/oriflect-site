@@ -78,8 +78,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Gradient bridge to next section */}
-      <div className="relative z-10 h-24 md:h-32 bg-gradient-to-b from-sapphire-900 via-sapphire-900/60 to-ivory" />
+      {/* Extra sapphire padding at bottom for breathing room */}
+      <div className="relative z-10 h-16 md:h-24 bg-sapphire-900" />
     </section>
   );
 }
