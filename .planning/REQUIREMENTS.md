@@ -40,8 +40,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Contact & Booking
 
-- [ ] **CONT-01**: Contact form collecting name, email, company, and message
-- [ ] **CONT-02**: Calendly popup widget for direct call booking
+- [x] **CONT-01**: Contact form collecting name, email, company, and message
+- [x] **CONT-02**: Calendly popup widget for direct call booking
 
 ### SEO & Performance
 
@@ -105,8 +105,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | BLOG-01 | Phase 4: Blog | Pending |
 | BLOG-02 | Phase 4: Blog | Pending |
 | BLOG-03 | Phase 4: Blog | Pending |
-| CONT-01 | Phase 3: Conversion Mechanisms | Pending |
-| CONT-02 | Phase 3: Conversion Mechanisms | Pending |
+| CONT-01 | Phase 3: Conversion Mechanisms | Complete |
+| CONT-02 | Phase 3: Conversion Mechanisms | Complete |
 | SEO-01 | Phase 5: SEO and Launch Polish | Pending |
 | SEO-02 | Phase 5: SEO and Launch Polish | Pending |
 | SEO-03 | Phase 5: SEO and Launch Polish | Pending |

@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Phase 3 context gathered
-last_updated: "2026-03-09T16:12:25.025Z"
-last_activity: 2026-03-09 -- Completed 02-02 (Services page with pricing, timelines, deliverables)
+status: in-progress
+stopped_at: Completed 03-01-PLAN.md
+last_updated: "2026-03-09T19:59:03.161Z"
+last_activity: 2026-03-09 -- Completed 03-01 (Contact page with Web3Forms form and Calendly embed)
 progress:
   total_phases: 5
   completed_phases: 2
-  total_plans: 5
-  completed_plans: 5
-  percent: 44
+  total_plans: 7
+  completed_plans: 6
+  percent: 86
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-09)
 
 **Core value:** Visitors understand what Oriflect does, trust its expertise, and book a discovery call
-**Current focus:** Phase 2: Core Pages
+**Current focus:** Phase 3: Conversion Mechanisms
 
 ## Current Position
 
-Phase: 2 of 5 (Core Pages)
-Plan: 2 of 3 in current phase
-Status: Completed 02-02 (Services page)
-Last activity: 2026-03-09 -- Completed 02-02 (Services page with pricing, timelines, deliverables)
+Phase: 3 of 5 (Conversion Mechanisms)
+Plan: 1 of 2 in current phase
+Status: Completed 03-01 (Contact page with form and Calendly embed)
+Last activity: 2026-03-09 -- Completed 03-01 (Contact page with Web3Forms form and Calendly embed)
 
-Progress: [████░░░░░░] 44%
+Progress: [█████████░] 86%
 
 ## Performance Metrics
 
@@ -53,6 +53,7 @@ Progress: [████░░░░░░] 44%
 | Phase 02-core-pages P03 | 1min | 1 tasks | 1 files |
 | Phase 02-core-pages P01 | 1min | 1 tasks | 1 files |
 | Phase 02-core-pages P02 | 2min | 1 tasks | 1 files |
+| Phase 03-conversion-mechanisms P01 | 2min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -75,6 +76,9 @@ Recent decisions affecting current work:
 - [02-02]: Alternating section backgrounds pattern (ivory/sapphire-tint) for multi-section pages
 - [02-02]: Horizontal timeline with numbered ember circles and gold connector lines
 - [02-02]: Mobile timelines stack vertically with border-l connector lines
+- [Phase 03-01]: Calendly assets loaded sitewide in BaseLayout head for popup availability on all pages
+- [Phase 03-01]: Inline validation uses blur-then-input pattern: validate on first blur, live re-validate on keystroke
+- [Phase 03-01]: Web3Forms form submission via fetch POST with JSON body, inline success message
 
 ### Pending Todos
 
@@ -89,6 +93,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-09T16:12:25.023Z
-Stopped at: Phase 3 context gathered
-Resume file: .planning/phases/03-conversion-mechanisms/03-CONTEXT.md
+Last session: 2026-03-09T19:59:03.159Z
+Stopped at: Completed 03-01-PLAN.md
+Resume file: None
