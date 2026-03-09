@@ -30,11 +30,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. A persistent "Book a Discovery Call" CTA button is visible on every page without opening the mobile menu
   4. Footer displays contact information, social links, and legal page links
   5. Site is deployed and accessible via a public URL with HTTPS
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md — Scaffold Astro project with Tailwind v4 design system, fonts, dark mode, and placeholder pages
+- [ ] 01-02-PLAN.md — Build Header, Footer, navigation components and wire into layout
 
 ### Phase 2: Core Pages
 **Goal**: Visitors can learn what Oriflect does, see specific service offerings with pricing, and understand who is behind the business
@@ -101,7 +101,7 @@ Note: Phase 4 (Blog) depends only on Phase 1 and could run in parallel with Phas
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/2 | Not started | - |
+| 1. Foundation | 0/2 | Planning complete | - |
 | 2. Core Pages | 0/3 | Not started | - |
 | 3. Conversion Mechanisms | 0/1 | Not started | - |
 | 4. Blog | 0/2 | Not started | - |
