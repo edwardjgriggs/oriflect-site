@@ -15,10 +15,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Homepage
 
-- [ ] **HOME-01**: Hero section with clear value proposition headline and subheadline
-- [ ] **HOME-02**: Service overview showing Audit → Implementation → Training pipeline
-- [ ] **HOME-03**: Pricing transparency with ranges ($500–$2K audit, $2K–$10K implementation)
-- [ ] **HOME-04**: Primary CTA driving visitors to book a discovery call
+- [x] **HOME-01**: Hero section with clear value proposition headline and subheadline
+- [x] **HOME-02**: Service overview showing Audit → Implementation → Training pipeline
+- [x] **HOME-03**: Pricing transparency with ranges ($500–$2K audit, $2K–$10K implementation)
+- [x] **HOME-04**: Primary CTA driving visitors to book a discovery call
 
 ### Services
 
@@ -92,10 +92,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | NAV-01 | Phase 1: Foundation | Complete |
 | NAV-02 | Phase 1: Foundation | Complete |
 | NAV-03 | Phase 1: Foundation | Complete |
-| HOME-01 | Phase 2: Core Pages | Pending |
-| HOME-02 | Phase 2: Core Pages | Pending |
-| HOME-03 | Phase 2: Core Pages | Pending |
-| HOME-04 | Phase 2: Core Pages | Pending |
+| HOME-01 | Phase 2: Core Pages | Complete |
+| HOME-02 | Phase 2: Core Pages | Complete |
+| HOME-03 | Phase 2: Core Pages | Complete |
+| HOME-04 | Phase 2: Core Pages | Complete |
 | SERV-01 | Phase 2: Core Pages | Pending |
 | SERV-02 | Phase 2: Core Pages | Pending |
 | SERV-03 | Phase 2: Core Pages | Pending |

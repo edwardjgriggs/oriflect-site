@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Completed 02-03-PLAN.md
-last_updated: "2026-03-09T15:53:33.401Z"
-last_activity: 2026-03-09 -- Completed 01-02 (Navigation shell with header, footer, theme toggle)
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-03-09T15:53:50.551Z"
+last_activity: 2026-03-09 -- Completed 02-01 (Homepage with hero, pipeline, differentiators, CTA)
 progress:
   total_phases: 5
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 5
-  completed_plans: 4
-  percent: 22
+  completed_plans: 5
+  percent: 80
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-09)
 
 **Core value:** Visitors understand what Oriflect does, trust its expertise, and book a discovery call
-**Current focus:** Phase 1: Foundation
+**Current focus:** Phase 2: Core Pages
 
 ## Current Position
 
-Phase: 1 of 5 (Foundation) -- COMPLETE
-Plan: 2 of 2 in current phase
-Status: Phase 1 complete, ready for Phase 2
-Last activity: 2026-03-09 -- Completed 01-02 (Navigation shell with header, footer, theme toggle)
+Phase: 2 of 5 (Core Pages)
+Plan: 1 of 3 in current phase
+Status: Completed 02-01 (Homepage)
+Last activity: 2026-03-09 -- Completed 02-01 (Homepage with hero, pipeline, differentiators, CTA)
 
-Progress: [██░░░░░░░░] 22%
+Progress: [████████░░] 80%
 
 ## Performance Metrics
 
@@ -51,6 +51,7 @@ Progress: [██░░░░░░░░] 22%
 
 *Updated after each plan completion*
 | Phase 02-core-pages P03 | 1min | 1 tasks | 1 files |
+| Phase 02-core-pages P01 | 1min | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -69,6 +70,7 @@ Recent decisions affecting current work:
 - [01-02]: Header/Footer both use bg-sapphire for visual bookend consistency
 - [01-02]: Inline SVG icons -- no icon library dependency
 - [Phase 02-core-pages]: About page: shield icon for Transparency, link icon for Partnership, third-person founder story tone
+- [Phase 02-01]: Inline style for sapphire gradient backgrounds; service cards as full anchor tags; five-column grid for pipeline arrows
 
 ### Pending Todos
 
@@ -83,6 +85,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-09T15:53:29.867Z
-Stopped at: Completed 02-03-PLAN.md
+Last session: 2026-03-09T15:53:49.584Z
+Stopped at: Completed 02-01-PLAN.md
 Resume file: None
