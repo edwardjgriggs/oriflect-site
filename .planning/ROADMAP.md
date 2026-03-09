@@ -102,7 +102,7 @@ Note: Phase 4 (Blog) depends only on Phase 1 and could run in parallel with Phas
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-09 |
-| 2. Core Pages | 0/3 | Not started | - |
+| 2. Core Pages | 2/3 | In Progress|  |
 | 3. Conversion Mechanisms | 0/1 | Not started | - |
 | 4. Blog | 0/2 | Not started | - |
 | 5. SEO and Launch Polish | 0/1 | Not started | - |

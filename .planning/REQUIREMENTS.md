@@ -29,8 +29,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### About
 
-- [ ] **ABOUT-01**: Founder/team story and credentials
-- [ ] **ABOUT-02**: Company mission and why Oriflect exists
+- [x] **ABOUT-01**: Founder/team story and credentials
+- [x] **ABOUT-02**: Company mission and why Oriflect exists
 
 ### Blog
 
@@ -100,8 +100,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SERV-02 | Phase 2: Core Pages | Pending |
 | SERV-03 | Phase 2: Core Pages | Pending |
 | SERV-04 | Phase 2: Core Pages | Pending |
-| ABOUT-01 | Phase 2: Core Pages | Pending |
-| ABOUT-02 | Phase 2: Core Pages | Pending |
+| ABOUT-01 | Phase 2: Core Pages | Complete |
+| ABOUT-02 | Phase 2: Core Pages | Complete |
 | BLOG-01 | Phase 4: Blog | Pending |
 | BLOG-02 | Phase 4: Blog | Pending |
 | BLOG-03 | Phase 4: Blog | Pending |
