@@ -2,13 +2,137 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="About" description="Learn about Oriflect and our mission to make AI accessible for small and medium businesses.">
-  <section class="px-6 py-16 max-w-4xl mx-auto">
-    <h1 class="font-heading font-bold text-4xl md:text-5xl text-sapphire dark:text-sapphire-tint mb-6">
-      About
+<BaseLayout title="About" description="Meet the team behind Oriflect -- AI consulting built for small and medium businesses.">
+
+  <!-- Page Header Banner -->
+  <section class="bg-sapphire py-16 px-6 text-center">
+    <h1 class="font-heading text-4xl md:text-5xl text-white font-bold">
+      About Oriflect
     </h1>
-    <p class="font-body text-lg text-charcoal/70 dark:text-dark-text/70 leading-relaxed">
-      Coming soon -- the story behind Oriflect and our team.
+    <p class="text-white/80 font-body text-lg mt-4 max-w-2xl mx-auto">
+      AI consulting built for businesses like yours.
     </p>
   </section>
+
+  <!-- Founder Section -->
+  <section class="bg-ivory dark:bg-dark-bg py-20 px-6">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Photo Placeholder -->
+      <div class="w-full max-w-sm mx-auto">
+        <div class="w-full aspect-square rounded-xl bg-sapphire-tint dark:bg-dark-surface flex flex-col items-center justify-center">
+          <svg class="w-24 h-24 text-sapphire/30 dark:text-dark-text/30" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.866 0-7 1.79-7 4v2h14v-2c0-2.21-3.134-4-7-4z"/>
+          </svg>
+          <span class="text-sm text-charcoal/40 dark:text-dark-text/40 mt-2">Photo coming soon</span>
+        </div>
+      </div>
+
+      <!-- Founder Story -->
+      <div>
+        <h2 class="font-heading text-2xl md:text-3xl font-bold text-sapphire dark:text-sapphire-tint">
+          Meet the Founder
+        </h2>
+        <p class="text-gold font-bold mt-2">[Founder Name] &mdash; Founder &amp; AI Consultant</p>
+        <div class="font-body text-lg leading-relaxed mt-4 space-y-4 text-charcoal dark:text-dark-text">
+          <p>
+            After years working in technology and artificial intelligence, one pattern became impossible to ignore: while large enterprises were racing ahead with dedicated AI teams and seven-figure budgets, small and medium businesses were left watching from the sidelines.
+          </p>
+          <p>
+            The tools existed. The potential was there. But without a guide who understood both the technology and the reality of running a lean operation, most business owners had no clear path forward. That gap between what AI could do and what SMBs could actually access felt wrong.
+          </p>
+          <p>
+            That realization became the spark behind Oriflect. The goal was simple: bring the same caliber of AI strategy and implementation that Fortune 500 companies enjoy to businesses with 5 to 200 employees &mdash; at a price that makes sense and with results you can measure.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="bg-sapphire-tint dark:bg-dark-surface py-20 px-6 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-heading text-2xl md:text-3xl font-bold text-sapphire dark:text-sapphire-tint">
+        Our Mission
+      </h2>
+      <p class="font-accent text-xl md:text-2xl text-charcoal dark:text-dark-text leading-relaxed mt-6 italic">
+        To make artificial intelligence accessible, practical, and profitable for small and medium businesses &mdash; delivering real ROI without the enterprise price tag or the industry jargon.
+      </p>
+      <p class="font-body text-lg text-charcoal/70 dark:text-dark-text/70 mt-4">
+        We believe every business deserves the opportunity to work smarter, not just harder. AI is not reserved for companies with unlimited budgets. When applied thoughtfully, it can transform operations, delight customers, and free up the time you need to focus on what matters most.
+      </p>
+    </div>
+  </section>
+
+  <!-- Core Values Section -->
+  <section class="bg-ivory dark:bg-dark-bg py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-heading text-2xl md:text-3xl font-bold text-sapphire dark:text-sapphire-tint text-center">
+        What We Stand For
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10 text-center">
+
+        <!-- ROI-First -->
+        <div>
+          <svg class="w-10 h-10 text-ember mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+          </svg>
+          <h3 class="font-heading font-bold text-lg mt-4 text-charcoal dark:text-dark-text">ROI-First</h3>
+          <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-2">
+            Every recommendation is backed by projected returns. We do not suggest AI for the sake of AI.
+          </p>
+        </div>
+
+        <!-- Transparency -->
+        <div>
+          <svg class="w-10 h-10 text-ember mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+          <h3 class="font-heading font-bold text-lg mt-4 text-charcoal dark:text-dark-text">Transparency</h3>
+          <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-2">
+            Clear pricing, honest timelines, no hidden fees. You always know where you stand.
+          </p>
+        </div>
+
+        <!-- SMB-Native -->
+        <div>
+          <svg class="w-10 h-10 text-ember mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+          </svg>
+          <h3 class="font-heading font-bold text-lg mt-4 text-charcoal dark:text-dark-text">SMB-Native</h3>
+          <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-2">
+            Our solutions are sized and priced for businesses with 5&ndash;200 employees, not enterprise leftovers.
+          </p>
+        </div>
+
+        <!-- Partnership -->
+        <div>
+          <svg class="w-10 h-10 text-ember mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+          </svg>
+          <h3 class="font-heading font-bold text-lg mt-4 text-charcoal dark:text-dark-text">Partnership</h3>
+          <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-2">
+            We walk alongside you from audit through implementation to training. One team, the whole journey.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing CTA Section -->
+  <section class="bg-sapphire py-16 px-6 text-center">
+    <h2 class="font-heading text-2xl md:text-3xl text-white font-bold">
+      Let's Talk About Your AI Journey
+    </h2>
+    <p class="text-white/80 font-body mt-4 max-w-xl mx-auto">
+      Every great transformation starts with a conversation. Let us learn about your business and show you what is possible.
+    </p>
+    <a
+      href="#book"
+      class="inline-block mt-8 bg-ember text-white font-heading font-bold px-8 py-4 rounded-lg hover:bg-ember/90 transition-colors"
+    >
+      Book a Discovery Call
+    </a>
+  </section>
+
 </BaseLayout>
