@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(git:*)",
+      "WebSearch",
+      "WebFetch(domain:www.consultingsuccess.com)",
+      "WebFetch(domain:knapsackcreative.com)",
+      "WebFetch(domain:github.com)",
+      "Skill(gsd:plan-phase)"
+    ]
+  }
+}
