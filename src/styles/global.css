@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand Colors */
+  --color-sapphire: #0A2463;
+  --color-gold: #D4A843;
+  --color-ember: #E8651A;
+  --color-charcoal: #1C1C1E;
+  --color-ivory: #F8F6F0;
+  --color-sapphire-tint: #E8EDF5;
+  --color-gold-tint: #F5EDD8;
+
+  /* Dark Mode Colors */
+  --color-dark-bg: #0F172A;
+  --color-dark-surface: #1E293B;
+  --color-dark-text: #E2E8F0;
+
+  /* Font Families */
+  --font-heading: "Montserrat Variable", sans-serif;
+  --font-body: "Inter Variable", sans-serif;
+  --font-accent: "Playfair Display Variable", serif;
+  --font-code: "JetBrains Mono Variable", monospace;
+}
