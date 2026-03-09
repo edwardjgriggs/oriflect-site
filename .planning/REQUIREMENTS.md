@@ -89,34 +89,34 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| NAV-01 | — | Pending |
-| NAV-02 | — | Pending |
-| NAV-03 | — | Pending |
-| HOME-01 | — | Pending |
-| HOME-02 | — | Pending |
-| HOME-03 | — | Pending |
-| HOME-04 | — | Pending |
-| SERV-01 | — | Pending |
-| SERV-02 | — | Pending |
-| SERV-03 | — | Pending |
-| SERV-04 | — | Pending |
-| ABOUT-01 | — | Pending |
-| ABOUT-02 | — | Pending |
-| BLOG-01 | — | Pending |
-| BLOG-02 | — | Pending |
-| BLOG-03 | — | Pending |
-| CONT-01 | — | Pending |
-| CONT-02 | — | Pending |
-| SEO-01 | — | Pending |
-| SEO-02 | — | Pending |
-| SEO-03 | — | Pending |
-| SEO-04 | — | Pending |
+| NAV-01 | Phase 1: Foundation | Pending |
+| NAV-02 | Phase 1: Foundation | Pending |
+| NAV-03 | Phase 1: Foundation | Pending |
+| HOME-01 | Phase 2: Core Pages | Pending |
+| HOME-02 | Phase 2: Core Pages | Pending |
+| HOME-03 | Phase 2: Core Pages | Pending |
+| HOME-04 | Phase 2: Core Pages | Pending |
+| SERV-01 | Phase 2: Core Pages | Pending |
+| SERV-02 | Phase 2: Core Pages | Pending |
+| SERV-03 | Phase 2: Core Pages | Pending |
+| SERV-04 | Phase 2: Core Pages | Pending |
+| ABOUT-01 | Phase 2: Core Pages | Pending |
+| ABOUT-02 | Phase 2: Core Pages | Pending |
+| BLOG-01 | Phase 4: Blog | Pending |
+| BLOG-02 | Phase 4: Blog | Pending |
+| BLOG-03 | Phase 4: Blog | Pending |
+| CONT-01 | Phase 3: Conversion Mechanisms | Pending |
+| CONT-02 | Phase 3: Conversion Mechanisms | Pending |
+| SEO-01 | Phase 5: SEO and Launch Polish | Pending |
+| SEO-02 | Phase 5: SEO and Launch Polish | Pending |
+| SEO-03 | Phase 5: SEO and Launch Polish | Pending |
+| SEO-04 | Phase 1: Foundation | Pending |
 
 **Coverage:**
 - v1 requirements: 22 total
-- Mapped to phases: 0
-- Unmapped: 22 ⚠️
+- Mapped to phases: 22
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-09*
-*Last updated: 2026-03-09 after initial definition*
+*Last updated: 2026-03-09 after roadmap creation*
