@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Project scaffold, design system, responsive layout shell, and deployment pipeline (completed 2026-03-09)
 - [x] **Phase 2: Core Pages** - Homepage, services, and about pages with conversion-focused content (completed 2026-03-09)
-- [ ] **Phase 3: Conversion Mechanisms** - Contact form, Calendly booking widget, and site-wide CTA integration
+- [x] **Phase 3: Conversion Mechanisms** - Contact form, Calendly booking widget, and site-wide CTA integration (completed 2026-03-09)
 - [ ] **Phase 4: Blog** - Blog infrastructure with content collections and 3-5 seed articles
 - [ ] **Phase 5: SEO and Launch Polish** - Meta tags, sitemap, analytics, and performance optimization
 
@@ -104,6 +104,6 @@ Note: Phase 4 (Blog) depends only on Phase 1 and could run in parallel with Phas
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-09 |
 | 2. Core Pages | 3/3 | Complete    | 2026-03-09 |
-| 3. Conversion Mechanisms | 1/2 | In Progress|  |
+| 3. Conversion Mechanisms | 2/2 | Complete   | 2026-03-09 |
 | 4. Blog | 0/2 | Not started | - |
 | 5. SEO and Launch Polish | 0/1 | Not started | - |

@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: in-progress
-stopped_at: Completed 03-01-PLAN.md
-last_updated: "2026-03-09T19:59:03.161Z"
-last_activity: 2026-03-09 -- Completed 03-01 (Contact page with Web3Forms form and Calendly embed)
+stopped_at: Completed 03-02-PLAN.md
+last_updated: "2026-03-09T20:03:09.252Z"
+last_activity: 2026-03-09 -- Completed 03-02 (CTA wiring and Contact nav links)
 progress:
   total_phases: 5
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 7
-  completed_plans: 6
-  percent: 86
+  completed_plans: 7
+  percent: 100
 ---
 
 # Project State
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-03-09)
 ## Current Position
 
 Phase: 3 of 5 (Conversion Mechanisms)
-Plan: 1 of 2 in current phase
-Status: Completed 03-01 (Contact page with form and Calendly embed)
-Last activity: 2026-03-09 -- Completed 03-01 (Contact page with Web3Forms form and Calendly embed)
+Plan: 2 of 2 in current phase (phase complete)
+Status: Completed 03-02 (CTA wiring and Contact nav links)
+Last activity: 2026-03-09 -- Completed 03-02 (CTA wiring and Contact nav links)
 
-Progress: [█████████░] 86%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
@@ -54,6 +54,7 @@ Progress: [█████████░] 86%
 | Phase 02-core-pages P01 | 1min | 1 tasks | 1 files |
 | Phase 02-core-pages P02 | 2min | 1 tasks | 1 files |
 | Phase 03-conversion-mechanisms P01 | 2min | 2 tasks | 3 files |
+| Phase 03-conversion-mechanisms P02 | 2min | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -79,6 +80,7 @@ Recent decisions affecting current work:
 - [Phase 03-01]: Calendly assets loaded sitewide in BaseLayout head for popup availability on all pages
 - [Phase 03-01]: Inline validation uses blur-then-input pattern: validate on first blur, live re-validate on keystroke
 - [Phase 03-01]: Web3Forms form submission via fetch POST with JSON body, inline success message
+- [Phase 03-02]: Kept href=#book as no-JS fallback on all CTA buttons alongside onclick handler
 
 ### Pending Todos
 
@@ -93,6 +95,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-09T19:59:03.159Z
-Stopped at: Completed 03-01-PLAN.md
+Last session: 2026-03-09T20:03:09Z
+Stopped at: Completed 03-02-PLAN.md
 Resume file: None
