@@ -34,7 +34,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Scaffold Astro project with Tailwind v4 design system, fonts, dark mode, and placeholder pages
-- [ ] 01-02-PLAN.md — Build Header, Footer, navigation components and wire into layout
+- [x] 01-02-PLAN.md — Build Header, Footer, navigation components and wire into layout
 
 ### Phase 2: Core Pages
 **Goal**: Visitors can learn what Oriflect does, see specific service offerings with pricing, and understand who is behind the business
@@ -46,12 +46,12 @@ Plans:
   3. Services page presents each service (Audit, Implementation, Training) with detailed descriptions, pricing, and a step-by-step process breakdown
   4. About page tells the founder/team story with credentials and explains why Oriflect exists
   5. All CTAs on these pages link to the booking/contact mechanism (functional integration comes in Phase 3)
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md — Homepage with hero, service pipeline cards, differentiators, and conversion CTAs
+- [ ] 02-02-PLAN.md — Services page with detailed descriptions, pricing, process timelines, and deliverables
+- [ ] 02-03-PLAN.md — About page with founder story, company mission, core values, and CTA
 
 ### Phase 3: Conversion Mechanisms
 **Goal**: Visitors can book a discovery call via Calendly or submit an inquiry through a contact form from anywhere on the site
