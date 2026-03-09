@@ -22,10 +22,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Services
 
-- [ ] **SERV-01**: Detailed AI Discovery Audit service description with pricing
-- [ ] **SERV-02**: Detailed AI Implementation service description with pricing
-- [ ] **SERV-03**: Detailed Staff Training service description
-- [ ] **SERV-04**: "What to expect" process breakdown for each service
+- [x] **SERV-01**: Detailed AI Discovery Audit service description with pricing
+- [x] **SERV-02**: Detailed AI Implementation service description with pricing
+- [x] **SERV-03**: Detailed Staff Training service description
+- [x] **SERV-04**: "What to expect" process breakdown for each service
 
 ### About
 
@@ -96,10 +96,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HOME-02 | Phase 2: Core Pages | Complete |
 | HOME-03 | Phase 2: Core Pages | Complete |
 | HOME-04 | Phase 2: Core Pages | Complete |
-| SERV-01 | Phase 2: Core Pages | Pending |
-| SERV-02 | Phase 2: Core Pages | Pending |
-| SERV-03 | Phase 2: Core Pages | Pending |
-| SERV-04 | Phase 2: Core Pages | Pending |
+| SERV-01 | Phase 2: Core Pages | Complete |
+| SERV-02 | Phase 2: Core Pages | Complete |
+| SERV-03 | Phase 2: Core Pages | Complete |
+| SERV-04 | Phase 2: Core Pages | Complete |
 | ABOUT-01 | Phase 2: Core Pages | Complete |
 | ABOUT-02 | Phase 2: Core Pages | Complete |
 | BLOG-01 | Phase 4: Blog | Pending |
