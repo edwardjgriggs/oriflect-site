@@ -57,29 +57,5 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </p>
     </div>
 
-    <!-- Dark Mode Test Section -->
-    <div class="bg-white dark:bg-dark-surface border border-sapphire/10 dark:border-white/10 p-8 rounded-lg mb-8">
-      <h2 class="font-heading font-bold text-xl text-sapphire dark:text-sapphire-tint mb-4">
-        Dark Mode Test
-      </h2>
-      <p class="text-charcoal dark:text-dark-text mb-6">
-        Toggle the theme to verify dark mode colors are applied correctly.
-        This card uses <code class="font-code text-sm bg-sapphire-tint dark:bg-dark-bg px-1.5 py-0.5 rounded">dark:bg-dark-surface</code> and <code class="font-code text-sm bg-sapphire-tint dark:bg-dark-bg px-1.5 py-0.5 rounded">dark:text-dark-text</code>.
-      </p>
-      <button
-        id="theme-toggle"
-        class="bg-sapphire hover:bg-sapphire/90 dark:bg-gold dark:hover:bg-gold/90 text-white dark:text-charcoal font-body font-medium px-6 py-3 rounded-lg transition-colors"
-      >
-        Toggle Dark Mode
-      </button>
-    </div>
   </section>
 </BaseLayout>
-
-<script>
-  const toggle = document.getElementById('theme-toggle');
-  toggle?.addEventListener('click', () => {
-    const isDark = document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  });
-</script>
