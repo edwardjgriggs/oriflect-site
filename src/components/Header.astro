@@ -14,8 +14,10 @@ import ThemeToggle from './ThemeToggle.astro';
       <a href="/services" class="hover:text-gold transition-colors font-body font-medium">Services</a>
       <a href="/about" class="hover:text-gold transition-colors font-body font-medium">About</a>
       <a href="/blog" class="hover:text-gold transition-colors font-body font-medium">Blog</a>
+      <a href="/contact" class="hover:text-gold transition-colors font-body font-medium">Contact</a>
       <a
         href="#book"
+        onclick="openCalendly(); return false;"
         class="bg-ember hover:bg-ember/90 text-white font-body font-medium px-5 py-2.5 rounded-md transition-colors"
       >
         Book a Discovery Call
@@ -27,6 +29,7 @@ import ThemeToggle from './ThemeToggle.astro';
     <div class="flex md:hidden items-center gap-3">
       <a
         href="#book"
+        onclick="openCalendly(); return false;"
         class="bg-ember hover:bg-ember/90 text-white font-body font-medium text-sm px-3 py-1.5 rounded-md transition-colors"
       >
         Book a Call
@@ -50,6 +53,7 @@ import ThemeToggle from './ThemeToggle.astro';
     <a href="/services" class="block py-3 hover:text-gold transition-colors font-body font-medium">Services</a>
     <a href="/about" class="block py-3 hover:text-gold transition-colors font-body font-medium">About</a>
     <a href="/blog" class="block py-3 hover:text-gold transition-colors font-body font-medium">Blog</a>
+    <a href="/contact" class="block py-3 hover:text-gold transition-colors font-body font-medium">Contact</a>
     <div class="pt-3 border-t border-white/10 mt-2">
       <ThemeToggle />
     </div>
