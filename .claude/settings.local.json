@@ -7,7 +7,9 @@
       "WebFetch(domain:www.consultingsuccess.com)",
       "WebFetch(domain:knapsackcreative.com)",
       "WebFetch(domain:github.com)",
-      "Skill(gsd:plan-phase)"
+      "Skill(gsd:plan-phase)",
+      "Bash(grep:*)",
+      "Bash(ls:*)"
     ]
   }
 }
