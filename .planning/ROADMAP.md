@@ -61,10 +61,11 @@ Plans:
   1. Contact page displays a form that collects name, email, company, and message, and successfully submits to a backend service
   2. Calendly popup widget opens when the "Book a Discovery Call" CTA is clicked on any page
   3. Form submission shows a confirmation state so the visitor knows their message was received
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: TBD
+- [ ] 03-01-PLAN.md — Contact page with Web3Forms form, inline Calendly embed, FAQ, and env configuration
+- [ ] 03-02-PLAN.md — Wire all sitewide CTA buttons to Calendly popup and add Contact to navigation
 
 ### Phase 4: Blog
 **Goal**: Visitors can browse and read thought leadership articles that demonstrate Oriflect's AI expertise
@@ -103,6 +104,6 @@ Note: Phase 4 (Blog) depends only on Phase 1 and could run in parallel with Phas
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-09 |
 | 2. Core Pages | 3/3 | Complete    | 2026-03-09 |
-| 3. Conversion Mechanisms | 0/1 | Not started | - |
+| 3. Conversion Mechanisms | 0/2 | Not started | - |
 | 4. Blog | 0/2 | Not started | - |
 | 5. SEO and Launch Polish | 0/1 | Not started | - |
