@@ -2,13 +2,350 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Services" description="AI consulting services for small and medium businesses -- audit, implementation, and training.">
-  <section class="px-6 py-16 max-w-4xl mx-auto">
-    <h1 class="font-heading font-bold text-4xl md:text-5xl text-sapphire dark:text-sapphire-tint mb-6">
-      Services
+<BaseLayout title="Services" description="AI consulting services -- discovery audit, implementation, and staff training for small and medium businesses.">
+
+  <!-- Page Header Banner -->
+  <section class="bg-sapphire py-16 px-6 text-center">
+    <h1 class="font-heading text-4xl md:text-5xl text-white font-bold">
+      Our Services
     </h1>
-    <p class="font-body text-lg text-charcoal/70 dark:text-dark-text/70 leading-relaxed">
-      Coming soon -- detailed service offerings for AI Discovery Audit, Implementation, and Staff Training.
+    <p class="text-white/80 font-body text-lg mt-4 max-w-2xl mx-auto">
+      End-to-end AI consulting tailored for small and medium businesses.
     </p>
   </section>
+
+  <!-- Section 1: AI Discovery Audit -->
+  <section id="audit" class="bg-ivory dark:bg-dark-bg py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <span class="inline-block bg-gold text-white text-sm font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+        Start Here
+      </span>
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-sapphire dark:text-sapphire-tint mt-4">
+        AI Discovery Audit
+      </h2>
+      <p class="text-gold font-bold text-2xl mt-2">$500 &ndash; $2,000</p>
+      <p class="font-body text-lg leading-relaxed mt-4 text-charcoal dark:text-dark-text max-w-3xl">
+        This is your starting point. We analyze your current workflows, identify where AI can save
+        you time and money, and deliver a prioritized roadmap with clear ROI projections. No jargon,
+        no guesswork -- just a practical plan you can act on immediately.
+      </p>
+
+      <!-- What to Expect Timeline -->
+      <div class="mt-10">
+        <h3 class="font-heading font-bold text-xl text-sapphire dark:text-sapphire-tint mb-6">What to Expect</h3>
+        <div class="flex flex-col md:flex-row items-start md:items-start">
+          <!-- Step 1 -->
+          <div class="flex md:flex-col items-start md:items-center md:text-center flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full bg-ember text-white flex items-center justify-center font-bold shrink-0">1</div>
+              <div class="border-l-2 border-gold h-8 md:hidden"></div>
+            </div>
+            <div class="ml-4 md:ml-0">
+              <p class="font-heading font-bold mt-0 md:mt-3">Discovery Call</p>
+              <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-1">Understand your business</p>
+            </div>
+          </div>
+          <!-- Connector -->
+          <div class="hidden md:flex items-center flex-0 mt-5">
+            <div class="w-12 border-t-2 border-gold"></div>
+          </div>
+          <!-- Step 2 -->
+          <div class="flex md:flex-col items-start md:items-center md:text-center flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full bg-ember text-white flex items-center justify-center font-bold shrink-0">2</div>
+              <div class="border-l-2 border-gold h-8 md:hidden"></div>
+            </div>
+            <div class="ml-4 md:ml-0">
+              <p class="font-heading font-bold mt-0 md:mt-3">Workflow Analysis</p>
+              <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-1">Map current processes</p>
+            </div>
+          </div>
+          <!-- Connector -->
+          <div class="hidden md:flex items-center flex-0 mt-5">
+            <div class="w-12 border-t-2 border-gold"></div>
+          </div>
+          <!-- Step 3 -->
+          <div class="flex md:flex-col items-start md:items-center md:text-center flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full bg-ember text-white flex items-center justify-center font-bold shrink-0">3</div>
+              <div class="border-l-2 border-gold h-8 md:hidden"></div>
+            </div>
+            <div class="ml-4 md:ml-0">
+              <p class="font-heading font-bold mt-0 md:mt-3">Opportunity Mapping</p>
+              <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-1">Identify AI applications</p>
+            </div>
+          </div>
+          <!-- Connector -->
+          <div class="hidden md:flex items-center flex-0 mt-5">
+            <div class="w-12 border-t-2 border-gold"></div>
+          </div>
+          <!-- Step 4 -->
+          <div class="flex md:flex-col items-start md:items-center md:text-center flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full bg-ember text-white flex items-center justify-center font-bold shrink-0">4</div>
+            </div>
+            <div class="ml-4 md:ml-0">
+              <p class="font-heading font-bold mt-0 md:mt-3">Report Delivery</p>
+              <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-1">Prioritized roadmap with ROI projections</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deliverables -->
+      <div class="mt-8">
+        <h3 class="font-heading font-bold text-xl text-sapphire dark:text-sapphire-tint mb-4">What You Get</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-ember shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <span class="font-body text-charcoal dark:text-dark-text">AI Opportunity Report</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-ember shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <span class="font-body text-charcoal dark:text-dark-text">ROI projections for each opportunity</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-ember shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <span class="font-body text-charcoal dark:text-dark-text">Prioritized implementation roadmap</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-ember shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <span class="font-body text-charcoal dark:text-dark-text">Tool and platform recommendations</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-10">
+        <a href="#book" class="inline-block bg-ember hover:bg-ember/90 text-white font-body font-medium text-lg px-8 py-4 rounded-lg transition-colors">
+          Book Your Audit
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: AI Implementation -->
+  <section id="implementation" class="bg-sapphire-tint dark:bg-dark-surface py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-sapphire dark:text-sapphire-tint">
+        AI Implementation
+      </h2>
+      <p class="text-gold font-bold text-2xl mt-2">$2,000 &ndash; $10,000</p>
+      <p class="font-body text-lg leading-relaxed mt-4 text-charcoal dark:text-dark-text max-w-3xl">
+        The core engagement. We select the right tools, build automations and integrations, and get
+        everything running in your environment. Common projects include email automation, AI-powered
+        CRM workflows, document processing, and chatbot deployment -- all tailored to deliver
+        measurable results for your business.
+      </p>
+
+      <!-- What to Expect Timeline -->
+      <div class="mt-10">
+        <h3 class="font-heading font-bold text-xl text-sapphire dark:text-sapphire-tint mb-6">What to Expect</h3>
+        <div class="flex flex-col md:flex-row items-start md:items-start">
+          <!-- Step 1 -->
+          <div class="flex md:flex-col items-start md:items-center md:text-center flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full bg-ember text-white flex items-center justify-center font-bold shrink-0">1</div>
+              <div class="border-l-2 border-gold h-8 md:hidden"></div>
+            </div>
+            <div class="ml-4 md:ml-0">
+              <p class="font-heading font-bold mt-0 md:mt-3">Solution Design</p>
+              <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-1">Architect the approach</p>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center flex-0 mt-5">
+            <div class="w-12 border-t-2 border-gold"></div>
+          </div>
+          <!-- Step 2 -->
+          <div class="flex md:flex-col items-start md:items-center md:text-center flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full bg-ember text-white flex items-center justify-center font-bold shrink-0">2</div>
+              <div class="border-l-2 border-gold h-8 md:hidden"></div>
+            </div>
+            <div class="ml-4 md:ml-0">
+              <p class="font-heading font-bold mt-0 md:mt-3">Build and Configure</p>
+              <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-1">Set up tools and automations</p>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center flex-0 mt-5">
+            <div class="w-12 border-t-2 border-gold"></div>
+          </div>
+          <!-- Step 3 -->
+          <div class="flex md:flex-col items-start md:items-center md:text-center flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full bg-ember text-white flex items-center justify-center font-bold shrink-0">3</div>
+              <div class="border-l-2 border-gold h-8 md:hidden"></div>
+            </div>
+            <div class="ml-4 md:ml-0">
+              <p class="font-heading font-bold mt-0 md:mt-3">Testing and Refinement</p>
+              <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-1">Ensure everything works</p>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center flex-0 mt-5">
+            <div class="w-12 border-t-2 border-gold"></div>
+          </div>
+          <!-- Step 4 -->
+          <div class="flex md:flex-col items-start md:items-center md:text-center flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full bg-ember text-white flex items-center justify-center font-bold shrink-0">4</div>
+            </div>
+            <div class="ml-4 md:ml-0">
+              <p class="font-heading font-bold mt-0 md:mt-3">Handoff and Training</p>
+              <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-1">You and your team are set up for success</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deliverables -->
+      <div class="mt-8">
+        <h3 class="font-heading font-bold text-xl text-sapphire dark:text-sapphire-tint mb-4">What You Get</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-ember shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <span class="font-body text-charcoal dark:text-dark-text">Working automations and integrations</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-ember shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <span class="font-body text-charcoal dark:text-dark-text">Technical documentation</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-ember shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <span class="font-body text-charcoal dark:text-dark-text">Admin training session</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-ember shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <span class="font-body text-charcoal dark:text-dark-text">30-day support window</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-10">
+        <a href="#book" class="inline-block bg-ember hover:bg-ember/90 text-white font-body font-medium text-lg px-8 py-4 rounded-lg transition-colors">
+          Start Your Implementation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Staff Training -->
+  <section id="training" class="bg-ivory dark:bg-dark-bg py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-sapphire dark:text-sapphire-tint">
+        Staff Training
+      </h2>
+      <p class="text-gold font-bold text-2xl mt-2">Custom <span class="font-body text-base font-normal text-charcoal/70 dark:text-dark-text/70">(priced based on team size and scope)</span></p>
+      <p class="font-body text-lg leading-relaxed mt-4 text-charcoal dark:text-dark-text max-w-3xl">
+        AI only delivers value when your team actually uses it. We build custom training programs
+        that ensure adoption sticks -- from executive overviews to hands-on workshops for daily
+        users. Your team walks away confident and capable, not confused.
+      </p>
+
+      <!-- What to Expect Timeline -->
+      <div class="mt-10">
+        <h3 class="font-heading font-bold text-xl text-sapphire dark:text-sapphire-tint mb-6">What to Expect</h3>
+        <div class="flex flex-col md:flex-row items-start md:items-start">
+          <!-- Step 1 -->
+          <div class="flex md:flex-col items-start md:items-center md:text-center flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full bg-ember text-white flex items-center justify-center font-bold shrink-0">1</div>
+              <div class="border-l-2 border-gold h-8 md:hidden"></div>
+            </div>
+            <div class="ml-4 md:ml-0">
+              <p class="font-heading font-bold mt-0 md:mt-3">Needs Assessment</p>
+              <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-1">Understand skill gaps</p>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center flex-0 mt-5">
+            <div class="w-12 border-t-2 border-gold"></div>
+          </div>
+          <!-- Step 2 -->
+          <div class="flex md:flex-col items-start md:items-center md:text-center flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full bg-ember text-white flex items-center justify-center font-bold shrink-0">2</div>
+              <div class="border-l-2 border-gold h-8 md:hidden"></div>
+            </div>
+            <div class="ml-4 md:ml-0">
+              <p class="font-heading font-bold mt-0 md:mt-3">Curriculum Design</p>
+              <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-1">Custom training plan</p>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center flex-0 mt-5">
+            <div class="w-12 border-t-2 border-gold"></div>
+          </div>
+          <!-- Step 3 -->
+          <div class="flex md:flex-col items-start md:items-center md:text-center flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full bg-ember text-white flex items-center justify-center font-bold shrink-0">3</div>
+              <div class="border-l-2 border-gold h-8 md:hidden"></div>
+            </div>
+            <div class="ml-4 md:ml-0">
+              <p class="font-heading font-bold mt-0 md:mt-3">Live Workshops</p>
+              <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-1">Hands-on sessions with real tools</p>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center flex-0 mt-5">
+            <div class="w-12 border-t-2 border-gold"></div>
+          </div>
+          <!-- Step 4 -->
+          <div class="flex md:flex-col items-start md:items-center md:text-center flex-1">
+            <div class="flex flex-col items-center">
+              <div class="w-10 h-10 rounded-full bg-ember text-white flex items-center justify-center font-bold shrink-0">4</div>
+            </div>
+            <div class="ml-4 md:ml-0">
+              <p class="font-heading font-bold mt-0 md:mt-3">Follow-up Support</p>
+              <p class="font-body text-sm text-charcoal/70 dark:text-dark-text/70 mt-1">Reference materials and recorded sessions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deliverables -->
+      <div class="mt-8">
+        <h3 class="font-heading font-bold text-xl text-sapphire dark:text-sapphire-tint mb-4">What You Get</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-ember shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <span class="font-body text-charcoal dark:text-dark-text">Custom curriculum tailored to your tools</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-ember shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <span class="font-body text-charcoal dark:text-dark-text">Hands-on workshop sessions</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-ember shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <span class="font-body text-charcoal dark:text-dark-text">Reference materials and quick-start guides</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-ember shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <span class="font-body text-charcoal dark:text-dark-text">Recorded sessions for future onboarding</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-10">
+        <a href="#book" class="inline-block bg-ember hover:bg-ember/90 text-white font-body font-medium text-lg px-8 py-4 rounded-lg transition-colors">
+          Plan Your Training
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing CTA Section -->
+  <section class="bg-sapphire py-16 px-6 text-center">
+    <h2 class="font-heading text-2xl md:text-3xl text-white font-bold">
+      Not Sure Where to Start?
+    </h2>
+    <p class="text-white/80 font-body mt-4 max-w-2xl mx-auto">
+      Most clients begin with an AI Discovery Audit. Book a free call and we will help you figure out the best first step.
+    </p>
+    <div class="mt-8">
+      <a href="#book" class="inline-block bg-ember hover:bg-ember/90 text-white font-body font-medium text-lg px-8 py-4 rounded-lg transition-colors">
+        Book a Discovery Call
+      </a>
+    </div>
+  </section>
+
 </BaseLayout>
