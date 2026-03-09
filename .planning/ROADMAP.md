@@ -12,7 +12,7 @@ Oriflect is a static marketing website for an AI consulting business targeting S
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Project scaffold, design system, responsive layout shell, and deployment pipeline
+- [x] **Phase 1: Foundation** - Project scaffold, design system, responsive layout shell, and deployment pipeline (completed 2026-03-09)
 - [ ] **Phase 2: Core Pages** - Homepage, services, and about pages with conversion-focused content
 - [ ] **Phase 3: Conversion Mechanisms** - Contact form, Calendly booking widget, and site-wide CTA integration
 - [ ] **Phase 4: Blog** - Blog infrastructure with content collections and 3-5 seed articles
@@ -101,7 +101,7 @@ Note: Phase 4 (Blog) depends only on Phase 1 and could run in parallel with Phas
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 1/2 | In progress | - |
+| 1. Foundation | 2/2 | Complete   | 2026-03-09 |
 | 2. Core Pages | 0/3 | Not started | - |
 | 3. Conversion Mechanisms | 0/1 | Not started | - |
 | 4. Blog | 0/2 | Not started | - |

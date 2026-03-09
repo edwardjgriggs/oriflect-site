@@ -9,9 +9,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Navigation & Layout
 
-- [ ] **NAV-01**: Responsive navigation with mobile hamburger menu
-- [ ] **NAV-02**: Persistent "Book a Discovery Call" CTA visible on all pages
-- [ ] **NAV-03**: Footer with contact info, social links, and legal pages
+- [x] **NAV-01**: Responsive navigation with mobile hamburger menu
+- [x] **NAV-02**: Persistent "Book a Discovery Call" CTA visible on all pages
+- [x] **NAV-03**: Footer with contact info, social links, and legal pages
 
 ### Homepage
 
@@ -89,9 +89,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| NAV-01 | Phase 1: Foundation | Pending |
-| NAV-02 | Phase 1: Foundation | Pending |
-| NAV-03 | Phase 1: Foundation | Pending |
+| NAV-01 | Phase 1: Foundation | Complete |
+| NAV-02 | Phase 1: Foundation | Complete |
+| NAV-03 | Phase 1: Foundation | Complete |
 | HOME-01 | Phase 2: Core Pages | Pending |
 | HOME-02 | Phase 2: Core Pages | Pending |
 | HOME-03 | Phase 2: Core Pages | Pending |

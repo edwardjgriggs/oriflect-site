@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-01-PLAN.md
-last_updated: "2026-03-09T14:09:03Z"
-last_activity: 2026-03-09 -- Completed 01-01 (Astro scaffold with Tailwind v4 design system)
+stopped_at: Completed 01-02-PLAN.md
+last_updated: "2026-03-09T15:00:00Z"
+last_activity: 2026-03-09 -- Completed 01-02 (Navigation shell with header, footer, theme toggle)
 progress:
   total_phases: 5
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 9
-  completed_plans: 1
-  percent: 10
+  completed_plans: 2
+  percent: 22
 ---
 
 # Project State
@@ -25,29 +25,29 @@ See: .planning/PROJECT.md (updated 2026-03-09)
 
 ## Current Position
 
-Phase: 1 of 5 (Foundation)
-Plan: 1 of 2 in current phase
-Status: Executing
-Last activity: 2026-03-09 -- Completed 01-01 (Astro scaffold with Tailwind v4 design system)
+Phase: 1 of 5 (Foundation) -- COMPLETE
+Plan: 2 of 2 in current phase
+Status: Phase 1 complete, ready for Phase 2
+Last activity: 2026-03-09 -- Completed 01-02 (Navigation shell with header, footer, theme toggle)
 
-Progress: [█░░░░░░░░░] 10%
+Progress: [██░░░░░░░░] 22%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 3min
-- Total execution time: 0.05 hours
+- Total plans completed: 2
+- Average duration: 5.5min
+- Total execution time: 0.18 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation | 1/2 | 3min | 3min |
+| 01-foundation | 2/2 | 11min | 5.5min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (3min)
-- Trend: Starting
+- Last 5 plans: 01-01 (3min), 01-02 (8min)
+- Trend: Stable
 
 *Updated after each plan completion*
 
@@ -64,6 +64,9 @@ Recent decisions affecting current work:
 - [01-01]: Used @tailwindcss/vite plugin (not deprecated @astrojs/tailwind) for Tailwind v4
 - [01-01]: CSS-first config via @theme directive -- no tailwind.config.js
 - [01-01]: Inline dark mode script in head prevents FOUC
+- [01-02]: Compact mobile CTA always visible without opening hamburger menu
+- [01-02]: Header/Footer both use bg-sapphire for visual bookend consistency
+- [01-02]: Inline SVG icons -- no icon library dependency
 
 ### Pending Todos
 
@@ -78,6 +81,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-09T14:09:03Z
-Stopped at: Completed 01-01-PLAN.md
-Resume file: .planning/phases/01-foundation/01-01-SUMMARY.md
+Last session: 2026-03-09T15:00:00Z
+Stopped at: Completed 01-02-PLAN.md
+Resume file: .planning/phases/01-foundation/01-02-SUMMARY.md
