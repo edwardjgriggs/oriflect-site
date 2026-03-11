@@ -47,7 +47,7 @@ This milestone is complete only when all are true:
 
 ## Slices
 
-- [ ] **S01: About Page — Real Founder Content** `risk:medium` `depends:[]`
+- [x] **S01: About Page — Real Founder Content** `risk:medium` `depends:[]`
   > After this: `/about` shows the real founder name, bio, and headshot photo — no placeholders.
 
 - [ ] **S02: Blog System** `risk:medium` `depends:[S01]`

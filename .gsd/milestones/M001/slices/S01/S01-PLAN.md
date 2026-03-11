@@ -14,7 +14,7 @@
 
 ## Tasks
 
-- [ ] **T01: Collect founder content and update About page**
+- [x] **T01: Collect founder content and update About page**
   Collect founder name, bio text, and photo from user; place photo in `public/`; update `src/pages/about.astro` with all real content; build and verify; commit, squash merge, and push.
 
 ## Files Likely Touched

@@ -17,14 +17,14 @@ This file is the explicit capability and coverage contract for the project.
 
 ### R002 — About page with real founder content
 - Class: primary-user-loop
-- Status: active
+- Status: validated
 - Description: The About page must show the founder's real name, real biography, and a real headshot photo instead of the current placeholders.
 - Why it matters: Credibility and trust — visitors evaluating an AI consultant want to know who they're hiring.
 - Source: user
 - Primary owning slice: M001/S01
 - Supporting slices: none
-- Validation: unmapped
-- Notes: User has a real photo ready. Founder name and bio text will be provided during execution.
+- Validation: proved by S01 — Edward Griggs name, bio, and headshot render on /about; astro build exits 0
+- Notes: Founder name: Edward Griggs. Photo: public/founder.png.
 
 ### R003 — Visual design polish
 - Class: quality-attribute
@@ -101,7 +101,7 @@ This file is the explicit capability and coverage contract for the project.
 | ID | Class | Status | Primary owner | Supporting | Proof |
 |---|---|---|---|---|---|
 | R001 | core-capability | active | M001/S02 | none | unmapped |
-| R002 | primary-user-loop | active | M001/S01 | none | unmapped |
+| R002 | primary-user-loop | validated | M001/S01 | none | S01 build + visual |
 | R003 | quality-attribute | active | M001/S03 | M001/S01, M001/S02 | unmapped |
 | R004 | operability | active | all slices | none | unmapped |
 | R010 | admin/support | deferred | none | none | unmapped |
