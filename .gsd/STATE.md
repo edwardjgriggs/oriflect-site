@@ -1,8 +1,8 @@
 # GSD State
 
-**Active Milestone:** M001 — Site Enhancement v1
-**Active Slice:** — (all slices complete)
-**Last Completed:** S03 — Visual Design Polish ✅
+**Active Milestone:** none (M001 complete)
+**Active Slice:** none
+**Last Completed:** M001 — Site Enhancement v1 ✅
 
 ## Recent Decisions
 
@@ -25,31 +25,28 @@ None.
 
 ## Milestone Progress
 
-- S01: About Page — Real Founder Content ✅ complete
-- S02: Blog System ✅ complete
-  - `src/content/config.ts` — Astro 5 Content Layer config with glob() loader and Zod schema
-  - `src/content/blog/ai-for-smbs-what-actually-works.md` — first real authored post
-  - `src/pages/blog.astro` — real listing page from getCollection('blog'), sorted newest-first
-  - `src/pages/blog/[slug].astro` — dynamic post page with getStaticPaths + render
-  - `src/styles/global.css` — .prose CSS block with dark mode variants
-  - `astro build` exits 0; 6 pages in dist/ including listing and individual post page
-  - All changes squash-merged to main and pushed to origin
-- S03: Visual Design Polish ✅ COMPLETE
-  - T01 ✅ — antialiased body, prose improvements (1.0625rem / line-height 1.8), pipeline card hover lift + icon containers, Why Oriflect card elevation, Final CTA border separator
-  - T02 ✅ — section dividers on Services, gold ring on founder photo, Core Values card elevation
-  - T03 ✅ — Blog tag pills + hover border + font-accent italic + full slice verification passed
-  - S03-SUMMARY.md written ✅
-  - S03-UAT.md written ✅
-  - R003 validated ✅
-  - M001-ROADMAP.md S03 marked [x] ✅
-  - feat(gsd): complete S03 commit pending
+### M001: Site Enhancement v1 ✅ COMPLETE
 
-## Requirements Validated
+- S01: About Page — Real Founder Content ✅
+- S02: Blog System ✅
+- S03: Visual Design Polish ✅
+- M001-SUMMARY.md written ✅
+- All changes pushed to origin/main ✅
+- R001 validated ✅ (blog system — proved by S02)
+- R002 validated ✅ (About page real content — proved by S01)
+- R003 validated ✅ (visual polish — proved by S03)
+- R004 validated ✅ (GitHub publish — git push origin main succeeded for all slices)
 
-- R001 — Blog system with real posts ✅ (proved by S02)
-- R002 — About page with real founder content ✅ (proved by S01)
-- R003 — Visual design polish ✅ (proved by S03 — astro build exit 0 + all 11 grep checks)
+## Requirements Status
+
+- R001 — Blog system with real posts: **validated**
+- R002 — About page with real founder content: **validated**
+- R003 — Visual design polish: **validated**
+- R004 — All changes published to GitHub: **validated**
+- R010 — Headless CMS: deferred
+- R011 — Real social URLs: deferred (blocked on user providing URLs)
+- R012 — Real phone number: deferred (blocked on user providing number)
 
 ## Next Action
 
-S03 unit complete. GSD extension to squash-merge `gsd/M001/S03` → main and push to origin (R004 closure for S03, completing M001).
+M001 complete. No active milestone. Consider planning M002.
