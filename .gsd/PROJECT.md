@@ -13,7 +13,7 @@ The site must clearly communicate Oriflect's three services (AI Discovery Audit,
 - Home page: full hero, service pipeline cards, "Why Oriflect" section, CTA
 - Services page: full three-service layout with timelines, deliverables, CTAs
 - About page: real content — Edward Griggs, real bio, real headshot (`/founder.png`)
-- Blog page: placeholder ("coming soon") — no content or routing
+- Blog page: real post listing at `/blog` + individual post pages at `/blog/[slug]` — Astro 5 Content Layer, one authored post
 - Contact page: Web3Forms contact form + Calendly inline embed + FAQ
 - Header: sticky nav with desktop + mobile responsive menu and theme toggle
 - Footer: brand, contact info, social links
@@ -37,4 +37,4 @@ See `.gsd/REQUIREMENTS.md` for the explicit capability contract, requirement sta
 
 ## Milestone Sequence
 
-- [ ] M001: Site Enhancement v1 — S01 ✅ complete; S02 (Blog) and S03 (Polish) remaining
+- [ ] M001: Site Enhancement v1 — S01 ✅, S02 ✅ complete; S03 (Polish) remaining

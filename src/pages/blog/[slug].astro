@@ -1,0 +1,71 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const formattedDate = post.data.pubDate.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<BaseLayout title={post.data.title} description={post.data.description}>
+
+  <!-- Post Header Banner -->
+  <section class="bg-sapphire dark:bg-sapphire/90 py-16 px-6 text-center">
+    <div class="max-w-3xl mx-auto">
+      {post.data.tags && post.data.tags.length > 0 && (
+        <div class="flex flex-wrap justify-center gap-2 mb-6">
+          {post.data.tags.map((tag) => (
+            <span class="inline-block px-3 py-1 text-xs font-body font-semibold uppercase tracking-wider bg-white/20 text-white rounded-full">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+      <h1 class="font-heading text-3xl md:text-5xl text-white font-bold leading-tight">
+        {post.data.title}
+      </h1>
+      <p class="font-body text-white/70 text-sm mt-4">
+        {formattedDate}
+      </p>
+      <p class="font-body text-white/80 text-lg mt-4 max-w-2xl mx-auto leading-relaxed">
+        {post.data.description}
+      </p>
+    </div>
+  </section>
+
+  <!-- Post Body -->
+  <section class="bg-ivory dark:bg-dark-bg py-16 px-6">
+    <div class="max-w-3xl mx-auto">
+
+      <!-- Prose Content -->
+      <div class="prose dark:prose-dark max-w-3xl mx-auto">
+        <Content />
+      </div>
+
+      <!-- Back Link -->
+      <div class="mt-16 pt-8 border-t border-charcoal/10 dark:border-dark-text/10">
+        <a
+          href="/blog"
+          class="inline-flex items-center gap-2 font-body text-sm font-semibold text-sapphire dark:text-sapphire-tint hover:text-ember dark:hover:text-ember transition-colors"
+        >
+          ← Back to Blog
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</BaseLayout>

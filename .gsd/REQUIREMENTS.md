@@ -6,13 +6,13 @@ This file is the explicit capability and coverage contract for the project.
 
 ### R001 — Blog system with real posts
 - Class: core-capability
-- Status: active
+- Status: validated
 - Description: The blog page must display real posts written as Markdown files using Astro content collections, with individual post pages, metadata (title, date, description), and a post listing.
 - Why it matters: The blog is the primary SEO and thought-leadership channel; a "coming soon" placeholder is a dead end for visitors and search engines.
 - Source: user
 - Primary owning slice: M001/S02
 - Supporting slices: none
-- Validation: unmapped
+- Validation: proved by S02 — /blog lists real posts from getCollection('blog'); /blog/ai-for-smbs-what-actually-works renders full post with title, date, description, and prose body; astro build exits 0 with 6 pages
 - Notes: Posts authored as .md files in src/content/blog/; no external CMS required.
 
 ### R002 — About page with real founder content
@@ -100,7 +100,7 @@ This file is the explicit capability and coverage contract for the project.
 
 | ID | Class | Status | Primary owner | Supporting | Proof |
 |---|---|---|---|---|---|
-| R001 | core-capability | active | M001/S02 | none | unmapped |
+| R001 | core-capability | validated | M001/S02 | none | S02 build + dist/ inspection |
 | R002 | primary-user-loop | validated | M001/S01 | none | S01 build + visual |
 | R003 | quality-attribute | active | M001/S03 | M001/S01, M001/S02 | unmapped |
 | R004 | operability | active | all slices | none | unmapped |
@@ -113,5 +113,5 @@ This file is the explicit capability and coverage contract for the project.
 
 - Active requirements: 4
 - Mapped to slices: 4
-- Validated: 0
+- Validated: 2 (R001, R002)
 - Unmapped active requirements: 0

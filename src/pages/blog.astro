@@ -1,14 +1,69 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const allPosts = await getCollection('blog');
+const posts = allPosts.sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
 ---
 
 <BaseLayout title="Blog" description="Insights and thought leadership on AI for small and medium businesses.">
-  <section class="px-6 py-16 max-w-4xl mx-auto">
-    <h1 class="font-heading font-bold text-4xl md:text-5xl text-sapphire dark:text-sapphire-tint mb-6">
+
+  <!-- Page Header Banner -->
+  <section class="bg-sapphire py-16 px-6 text-center">
+    <h1 class="font-heading text-4xl md:text-5xl text-white font-bold">
       Blog
     </h1>
-    <p class="font-body text-lg text-charcoal/70 dark:text-dark-text/70 leading-relaxed">
-      Coming soon -- articles on AI strategy, implementation tips, and industry insights.
+    <p class="text-white/80 font-body text-lg mt-4 max-w-2xl mx-auto">
+      Practical insights on AI strategy, implementation, and what actually works for SMBs.
     </p>
   </section>
+
+  <!-- Post Listing -->
+  <section class="bg-ivory dark:bg-dark-bg py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+
+      {posts.length === 0 ? (
+        <p class="font-body text-lg text-charcoal/60 dark:text-dark-text/60 text-center py-12">
+          No posts yet — check back soon.
+        </p>
+      ) : (
+        <ul class="space-y-8">
+          {posts.map((post) => (
+            <li class="bg-white dark:bg-dark-surface rounded-xl shadow-sm border border-ivory dark:border-dark-surface p-8 hover:shadow-md transition-shadow">
+              <article>
+                <h2 class="font-heading text-2xl font-bold text-sapphire dark:text-sapphire-tint mb-2">
+                  <a
+                    href={`/blog/${post.id}`}
+                    class="hover:text-ember dark:hover:text-ember transition-colors"
+                  >
+                    {post.data.title}
+                  </a>
+                </h2>
+                <p class="font-body text-sm text-charcoal/50 dark:text-dark-text/50 mb-4">
+                  {post.data.pubDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                  })}
+                </p>
+                <p class="font-body text-base text-charcoal dark:text-dark-text leading-relaxed">
+                  {post.data.description}
+                </p>
+                <a
+                  href={`/blog/${post.id}`}
+                  class="inline-block mt-4 font-body text-sm font-semibold text-sapphire dark:text-sapphire-tint hover:text-ember dark:hover:text-ember underline transition-colors"
+                >
+                  Read more →
+                </a>
+              </article>
+            </li>
+          ))}
+        </ul>
+      )}
+
+    </div>
+  </section>
+
 </BaseLayout>

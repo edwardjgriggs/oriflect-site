@@ -50,7 +50,7 @@ This milestone is complete only when all are true:
 - [x] **S01: About Page — Real Founder Content** `risk:medium` `depends:[]`
   > After this: `/about` shows the real founder name, bio, and headshot photo — no placeholders.
 
-- [ ] **S02: Blog System** `risk:medium` `depends:[S01]`
+- [x] **S02: Blog System** `risk:medium` `depends:[S01]`
   > After this: `/blog` lists real posts and individual post pages render at `/blog/[slug]`.
 
 - [ ] **S03: Visual Design Polish** `risk:low` `depends:[S02]`
