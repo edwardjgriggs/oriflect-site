@@ -27,7 +27,7 @@ The site must clearly communicate Oriflect's three services (AI Discovery Audit,
 - Tailwind CSS v4 (CSS-first config via `@theme` in global.css)
 - `BaseLayout.astro` wraps all pages — handles fonts, dark mode init, Calendly assets
 - Component pattern: `Header.astro`, `Footer.astro`, `Logo.astro`, `ThemeToggle.astro`
-- No CMS — content is inline in `.astro` files; blog posts will use Astro content collections
+- No CMS — content is inline in `.astro` files; blog posts use Astro 5 Content Layer (`src/content/config.ts` with glob() loader + Zod schema)
 - Brand colors defined as CSS variables: sapphire, gold, ember, charcoal, ivory, dark-bg, etc.
 - Font stack: Montserrat (heading), Inter (body), Playfair Display (accent), JetBrains Mono (code)
 
@@ -37,4 +37,4 @@ See `.gsd/REQUIREMENTS.md` for the explicit capability contract, requirement sta
 
 ## Milestone Sequence
 
-- [x] M001: Site Enhancement v1 — S01 ✅, S02 ✅, S03 ✅ all complete; squash-merge S03 → main pending
+- [x] M001: Site Enhancement v1 — S01 ✅, S02 ✅, S03 ✅ all complete; all changes pushed to origin/main ✅ (R001–R004 all validated)

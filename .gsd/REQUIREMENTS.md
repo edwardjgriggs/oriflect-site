@@ -39,13 +39,13 @@ This file is the explicit capability and coverage contract for the project.
 
 ### R004 — All changes published to GitHub
 - Class: operability
-- Status: active
+- Status: validated
 - Description: Every completed slice must be committed and pushed to the GitHub remote (main branch).
 - Why it matters: GitHub is the source of truth and deployment trigger.
 - Source: user
 - Primary owning slice: all slices
 - Supporting slices: none
-- Validation: partially proved — S01 and S02 branches squash-merged to main and pushed to origin; S03 commit exists on gsd/M001/S03 branch; squash-merge to main pending (GSD extension step)
+- Validation: proved by M001 close — git push origin main succeeded (23b4e77..e601574); origin/main HEAD is e601574 feat(M001/S03) with all S01, S02, and S03 commits present on origin/main
 - Notes: Each slice squash-merges to main and pushes to origin.
 
 ## Deferred
@@ -103,7 +103,7 @@ This file is the explicit capability and coverage contract for the project.
 | R001 | core-capability | validated | M001/S02 | none | S02 build + dist/ inspection |
 | R002 | primary-user-loop | validated | M001/S01 | none | S01 build + visual |
 | R003 | quality-attribute | validated | M001/S03 | M001/S01, M001/S02 | S03 build + dist/ inspection |
-| R004 | operability | active | all slices | none | S01+S02 pushed; S03 squash-merge pending |
+| R004 | operability | validated | all slices | none | git push origin main — all M001 commits on origin/main |
 | R010 | admin/support | deferred | none | none | unmapped |
 | R011 | integration | deferred | none | none | unmapped |
 | R012 | core-capability | deferred | none | none | unmapped |
@@ -113,5 +113,5 @@ This file is the explicit capability and coverage contract for the project.
 
 - Active requirements: 4
 - Mapped to slices: 4
-- Validated: 3 (R001, R002, R003)
+- Validated: 4 (R001, R002, R003, R004)
 - Unmapped active requirements: 0
