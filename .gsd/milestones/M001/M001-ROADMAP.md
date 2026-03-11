@@ -53,7 +53,7 @@ This milestone is complete only when all are true:
 - [x] **S02: Blog System** `risk:medium` `depends:[S01]`
   > After this: `/blog` lists real posts and individual post pages render at `/blog/[slug]`.
 
-- [ ] **S03: Visual Design Polish** `risk:low` `depends:[S02]`
+- [x] **S03: Visual Design Polish** `risk:low` `depends:[S02]`
   > After this: the site looks noticeably more polished across Home, Services, About, and Blog.
 
 ## Boundary Map

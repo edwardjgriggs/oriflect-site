@@ -28,13 +28,13 @@ This file is the explicit capability and coverage contract for the project.
 
 ### R003 — Visual design polish
 - Class: quality-attribute
-- Status: active
+- Status: validated
 - Description: The site's overall visual design should feel polished and distinctive — improvements to typography, spacing, section transitions, component detail, and overall feel across all pages.
 - Why it matters: First impressions drive whether a potential client books a call; the site is the primary sales tool.
 - Source: user
 - Primary owning slice: M001/S03
 - Supporting slices: M001/S01, M001/S02
-- Validation: unmapped
+- Validation: proved by S03 — antialiased global rendering; prose readability improvements; pipeline card hover lift + icon containers; Why Oriflect + Core Values card elevation; section border dividers on Services; gold ring frame on founder photo; tag pills on blog listing; font-accent italic on blog post description; astro build exits 0; all 11 grep checks pass against dist/
 - Notes: Prioritize the Home and Services pages. Keep brand color system intact.
 
 ### R004 — All changes published to GitHub
@@ -45,7 +45,7 @@ This file is the explicit capability and coverage contract for the project.
 - Source: user
 - Primary owning slice: all slices
 - Supporting slices: none
-- Validation: unmapped
+- Validation: partially proved — S01 and S02 branches squash-merged to main and pushed to origin; S03 commit exists on gsd/M001/S03 branch; squash-merge to main pending (GSD extension step)
 - Notes: Each slice squash-merges to main and pushes to origin.
 
 ## Deferred
@@ -102,8 +102,8 @@ This file is the explicit capability and coverage contract for the project.
 |---|---|---|---|---|---|
 | R001 | core-capability | validated | M001/S02 | none | S02 build + dist/ inspection |
 | R002 | primary-user-loop | validated | M001/S01 | none | S01 build + visual |
-| R003 | quality-attribute | active | M001/S03 | M001/S01, M001/S02 | unmapped |
-| R004 | operability | active | all slices | none | unmapped |
+| R003 | quality-attribute | validated | M001/S03 | M001/S01, M001/S02 | S03 build + dist/ inspection |
+| R004 | operability | active | all slices | none | S01+S02 pushed; S03 squash-merge pending |
 | R010 | admin/support | deferred | none | none | unmapped |
 | R011 | integration | deferred | none | none | unmapped |
 | R012 | core-capability | deferred | none | none | unmapped |
@@ -113,5 +113,5 @@ This file is the explicit capability and coverage contract for the project.
 
 - Active requirements: 4
 - Mapped to slices: 4
-- Validated: 2 (R001, R002)
+- Validated: 3 (R001, R002, R003)
 - Unmapped active requirements: 0

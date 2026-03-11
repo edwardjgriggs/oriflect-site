@@ -37,4 +37,4 @@ See `.gsd/REQUIREMENTS.md` for the explicit capability contract, requirement sta
 
 ## Milestone Sequence
 
-- [ ] M001: Site Enhancement v1 — S01 ✅, S02 ✅ complete; S03 (Polish) remaining
+- [x] M001: Site Enhancement v1 — S01 ✅, S02 ✅, S03 ✅ all complete; squash-merge S03 → main pending

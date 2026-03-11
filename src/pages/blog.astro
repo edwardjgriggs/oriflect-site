@@ -31,7 +31,7 @@ const posts = allPosts.sort(
       ) : (
         <ul class="space-y-8">
           {posts.map((post) => (
-            <li class="bg-white dark:bg-dark-surface rounded-xl shadow-sm border border-ivory dark:border-dark-surface p-8 hover:shadow-md transition-shadow">
+            <li class="bg-white dark:bg-dark-surface rounded-xl shadow-sm border border-ivory dark:border-dark-surface p-8 hover:shadow-md transition-shadow hover:border-sapphire/30 dark:hover:border-sapphire-tint/30 transition-colors">
               <article>
                 <h2 class="font-heading text-2xl font-bold text-sapphire dark:text-sapphire-tint mb-2">
                   <a
@@ -41,13 +41,22 @@ const posts = allPosts.sort(
                     {post.data.title}
                   </a>
                 </h2>
-                <p class="font-body text-sm text-charcoal/50 dark:text-dark-text/50 mb-4">
+                <p class="font-body text-sm text-charcoal/50 dark:text-dark-text/50 mb-3">
                   {post.data.pubDate.toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',
                     day: 'numeric',
                   })}
                 </p>
+                {post.data.tags && post.data.tags.length > 0 && (
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    {post.data.tags.map((tag) => (
+                      <span class="inline-block px-2 py-0.5 text-xs font-body font-semibold uppercase tracking-wider bg-sapphire/10 dark:bg-sapphire-tint/10 text-sapphire dark:text-sapphire-tint rounded-full">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
                 <p class="font-body text-base text-charcoal dark:text-dark-text leading-relaxed">
                   {post.data.description}
                 </p>
