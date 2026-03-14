@@ -20,6 +20,7 @@ The site must clearly communicate Oriflect's three services (AI Discovery Audit,
 - Dark mode: fully wired via localStorage + CSS variable theme
 - Calendly: popup on all CTAs, inline embed on Contact page
 - GitHub remote: https://github.com/edwardjgriggs/oriflect-site.git (main branch)
+- M001 complete: blog system, real founder content, visual polish — all validated and pushed
 
 ## Architecture / Key Patterns
 
@@ -37,4 +38,5 @@ See `.gsd/REQUIREMENTS.md` for the explicit capability contract, requirement sta
 
 ## Milestone Sequence
 
-- [x] M001: Site Enhancement v1 — S01 ✅, S02 ✅, S03 ✅ all complete; all changes pushed to origin/main ✅ (R001–R004 all validated)
+- [x] M001: Site Enhancement v1 — Real founder content, blog system, visual polish. All validated and pushed.
+- [ ] M002: Site Enhancement v2 — Kinetic design, social proof, AI visual language, view transitions, micro-interactions.
