@@ -60,18 +60,31 @@ import ThemeToggle from './ThemeToggle.astro';
   </div>
 </header>
 
-<script is:inline>
-  (function() {
+<script>
+  function initMobileMenu() {
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('mobile-menu');
     const iconOpen = document.getElementById('menu-icon-open');
     const iconClose = document.getElementById('menu-icon-close');
 
-    toggle?.addEventListener('click', function() {
-      const isHidden = menu.classList.toggle('hidden');
-      iconOpen.classList.toggle('hidden', !isHidden);
-      iconClose.classList.toggle('hidden', isHidden);
+    toggle?.addEventListener('click', () => {
+      const isHidden = menu!.classList.toggle('hidden');
+      iconOpen!.classList.toggle('hidden', !isHidden);
+      iconClose!.classList.toggle('hidden', isHidden);
       toggle.setAttribute('aria-label', isHidden ? 'Open menu' : 'Close menu');
     });
-  })();
+  }
+
+  document.addEventListener('astro:page-load', initMobileMenu);
+
+  document.addEventListener('astro:after-swap', () => {
+    const menu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('menu-icon-open');
+    const iconClose = document.getElementById('menu-icon-close');
+    const toggle = document.getElementById('menu-toggle');
+    menu?.classList.add('hidden');
+    iconOpen?.classList.remove('hidden');
+    iconClose?.classList.add('hidden');
+    toggle?.setAttribute('aria-label', 'Open menu');
+  });
 </script>

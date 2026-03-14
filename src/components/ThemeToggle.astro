@@ -17,9 +17,13 @@
   </svg>
 </button>
 
-<script is:inline>
-  document.getElementById('theme-toggle-btn')?.addEventListener('click', function() {
-    const isDark = document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  });
+<script>
+  document.addEventListener('astro:page-load', () => {
+    document.addEventListener('click', (e) => {
+      const btn = (e.target as Element)?.closest('#theme-toggle-btn');
+      if (!btn) return;
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  }, { once: true });
 </script>

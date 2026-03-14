@@ -4,6 +4,7 @@ import '@fontsource-variable/inter';
 import '@fontsource-variable/playfair-display';
 import '@fontsource-variable/jetbrains-mono';
 import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
@@ -41,6 +42,17 @@ const { title, description = 'AI consulting for small and medium businesses' } =
         }
       })();
     </script>
+    <script is:inline>
+      document.addEventListener('astro:after-swap', function() {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      });
+    </script>
+    <ClientRouter />
   </head>
   <body class="bg-ivory text-charcoal font-body dark:bg-dark-bg dark:text-dark-text min-h-screen antialiased">
     <Header />

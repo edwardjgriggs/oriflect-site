@@ -59,7 +59,7 @@ This milestone is complete only when all are true:
 - [x] **S02: Scroll Reveal & Metrics Animations** `risk:low` `depends:[]`
   > After this: All pages have sections that fade/slide into view on scroll; homepage has a metrics section with numbers that count up when scrolled into view.
 
-- [ ] **S03: View Transitions & Page Flow** `risk:low` `depends:[]`
+- [x] **S03: View Transitions & Page Flow** `risk:low` `depends:[]`
   > After this: Navigating between any pages cross-fades smoothly; dark mode state persists across transitions; no flash of wrong theme.
 
 - [ ] **S04: Social Proof & Results Showcase** `risk:medium` `depends:[S02]`

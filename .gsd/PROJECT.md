@@ -37,4 +37,5 @@ See `.gsd/REQUIREMENTS.md` for the explicit capability contract, requirement sta
 
 ## Milestone Sequence
 
-- [ ] M001: Site Enhancement v1 — S01 ✅ complete; S02 (Blog) and S03 (Polish) remaining
+- ✅ M001: Site Enhancement v1
+- 🔄 M002: Site Enhancement v2 — S01 ✅, S02 ✅, S03 ✅; S04–S06 remaining
