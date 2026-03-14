@@ -16,3 +16,5 @@
 | D008 | M002/S02 | pattern | No-JS fallback approach | `<noscript><style>` block per page forces visibility | Simpler than `.no-js` class approach; works without any JS execution | Yes — if centralized in layout |
 | D009 | M002/S02 | arch | View transition forward-compat | `astro:after-swap` listener in ScrollReveal | Re-initializes observers after view transitions without S03 dependency | No |
 | D010 | M002/S03 | pattern | Script re-init for view transitions | `astro:page-load` event + remove `is:inline` for interactive scripts | `is:inline` scripts don't re-run after ClientRouter swaps; `astro:page-load` re-binds listeners. Dark mode uses `astro:after-swap` (before paint) separately. | No |
+| D011 | M002/S04 | pattern | Testimonial slide transitions | CSS opacity transitions (not JS animation) | Simpler implementation; inherently respects reduced-motion CSS rules; graceful degradation shows first slide if JS fails | No |
+| D012 | M002/S04 | pattern | Results card data approach | Map over data array rather than hand-coded cards | Easier to update content; consistent styling guaranteed across all cards | Yes — if cards need unique layouts |

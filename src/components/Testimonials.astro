@@ -1,0 +1,130 @@
+---
+const testimonials = [
+  {
+    quote: "Oriflect found efficiency gaps we'd been blind to for years. Within two months, our team reclaimed over 20 hours a week — and actually enjoyed the new workflow.",
+    name: 'Sarah Chen',
+    role: 'COO, Meridian Logistics',
+  },
+  {
+    quote: "We were skeptical about AI hype, but Oriflect delivered something real: automations that our non-technical staff adopted on day one. The ROI paid for the project in six weeks.",
+    name: 'James Okafor',
+    role: 'Founder, BrightPath Financial',
+  },
+  {
+    quote: "The training sessions were the game-changer. Our team went from fearing AI to requesting new automations. That cultural shift is worth more than any single tool.",
+    name: 'Maria Torres',
+    role: 'VP Operations, Crestline Health',
+  },
+];
+---
+
+<section class="bg-sapphire-tint dark:bg-dark-surface py-20 px-6">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="font-heading font-bold text-3xl md:text-4xl text-sapphire dark:text-sapphire-tint mb-12">
+      What Our Clients Say
+    </h2>
+
+    <div class="relative min-h-[200px]" data-testimonials>
+      {testimonials.map((t, i) => (
+        <blockquote
+          class:list={[
+            'testimonial-slide absolute inset-0 transition-opacity duration-500',
+            i === 0 ? 'opacity-100' : 'opacity-0 pointer-events-none',
+          ]}
+          data-slide={i}
+        >
+          <p class="font-accent text-xl md:text-2xl text-charcoal dark:text-dark-text leading-relaxed italic mb-6">
+            &ldquo;{t.quote}&rdquo;
+          </p>
+          <footer class="font-body">
+            <cite class="not-italic">
+              <span class="block font-bold text-charcoal dark:text-dark-text">{t.name}</span>
+              <span class="block text-charcoal/60 dark:text-dark-text/60 text-sm">{t.role}</span>
+            </cite>
+          </footer>
+        </blockquote>
+      ))}
+    </div>
+
+    <!-- Dot navigation -->
+    <div class="flex justify-center gap-3 mt-8" data-dots>
+      {testimonials.map((_, i) => (
+        <button
+          class:list={[
+            'w-3 h-3 rounded-full transition-colors duration-300',
+            i === 0 ? 'bg-ember' : 'bg-charcoal/20 dark:bg-dark-text/20',
+          ]}
+          data-dot={i}
+          aria-label={`Show testimonial ${i + 1}`}
+        />
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  function initTestimonials() {
+    const container = document.querySelector('[data-testimonials]');
+    if (!container) return;
+
+    const slides = container.querySelectorAll('[data-slide]');
+    const dots = document.querySelectorAll('[data-dot]');
+    let current = 0;
+    let intervalId: ReturnType<typeof setInterval> | null = null;
+
+    function goTo(index: number) {
+      slides.forEach((slide, i) => {
+        const el = slide as HTMLElement;
+        if (i === index) {
+          el.classList.remove('opacity-0', 'pointer-events-none');
+          el.classList.add('opacity-100');
+        } else {
+          el.classList.remove('opacity-100');
+          el.classList.add('opacity-0', 'pointer-events-none');
+        }
+      });
+      dots.forEach((dot, i) => {
+        if (i === index) {
+          dot.classList.remove('bg-charcoal/20', 'dark:bg-dark-text/20');
+          dot.classList.add('bg-ember');
+        } else {
+          dot.classList.remove('bg-ember');
+          dot.classList.add('bg-charcoal/20', 'dark:bg-dark-text/20');
+        }
+      });
+      current = index;
+    }
+
+    function startAutoRotation() {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      intervalId = setInterval(() => {
+        goTo((current + 1) % slides.length);
+      }, 5000);
+    }
+
+    function stopAutoRotation() {
+      if (intervalId !== null) {
+        clearInterval(intervalId);
+        intervalId = null;
+      }
+    }
+
+    // Dot click handlers
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        stopAutoRotation();
+        goTo(i);
+        startAutoRotation();
+      });
+    });
+
+    // Clean up on view transition
+    document.addEventListener('astro:before-swap', stopAutoRotation, { once: true });
+
+    startAutoRotation();
+  }
+
+  // Init on first load and on page transitions
+  initTestimonials();
+  document.addEventListener('astro:page-load', initTestimonials);
+</script>

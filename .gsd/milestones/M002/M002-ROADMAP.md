@@ -62,7 +62,7 @@ This milestone is complete only when all are true:
 - [x] **S03: View Transitions & Page Flow** `risk:low` `depends:[]`
   > After this: Navigating between any pages cross-fades smoothly; dark mode state persists across transitions; no flash of wrong theme.
 
-- [ ] **S04: Social Proof & Results Showcase** `risk:medium` `depends:[S02]`
+- [x] **S04: Social Proof & Results Showcase** `risk:medium` `depends:[S02]`
   > After this: Homepage has animated before/after client results cards and a rotating testimonial section, all with scroll-reveal animations.
 
 - [ ] **S05: Service Pipeline & Blog Feature** `risk:low` `depends:[S02,S04]`

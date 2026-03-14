@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroAnimation from '../components/HeroAnimation.astro';
 import ScrollReveal from '../components/ScrollReveal.astro';
 import MetricsCounter from '../components/MetricsCounter.astro';
+import ResultsShowcase from '../components/ResultsShowcase.astro';
+import Testimonials from '../components/Testimonials.astro';
 ---
 
 <BaseLayout title="Home" description="Strategic AI consulting for small and medium businesses. Discover, implement, and master AI solutions that drive real results.">
@@ -199,6 +201,16 @@ import MetricsCounter from '../components/MetricsCounter.astro';
       </div>
     </div>
   </section>
+
+  <!-- Results Showcase Section -->
+  <ScrollReveal>
+    <ResultsShowcase />
+  </ScrollReveal>
+
+  <!-- Testimonials Section -->
+  <ScrollReveal>
+    <Testimonials />
+  </ScrollReveal>
 
   <!-- Final CTA Section -->
   <ScrollReveal>
