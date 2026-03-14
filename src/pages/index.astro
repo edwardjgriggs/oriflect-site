@@ -1,10 +1,17 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroAnimation from '../components/HeroAnimation.astro';
 import ScrollReveal from '../components/ScrollReveal.astro';
 import MetricsCounter from '../components/MetricsCounter.astro';
 import ResultsShowcase from '../components/ResultsShowcase.astro';
 import Testimonials from '../components/Testimonials.astro';
+import FeaturedPosts from '../components/FeaturedPosts.astro';
+
+const allPosts = await getCollection('blog');
+const posts = allPosts.sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
 ---
 
 <BaseLayout title="Home" description="Strategic AI consulting for small and medium businesses. Discover, implement, and master AI solutions that drive real results.">
@@ -63,7 +70,7 @@ import Testimonials from '../components/Testimonials.astro';
         </ScrollReveal>
 
         <!-- Arrow 1 -->
-        <div class="hidden md:flex items-center justify-center">
+        <div class="hidden md:flex items-center justify-center pipeline-arrow-pulse">
           <svg class="w-8 h-8 text-sapphire/40 dark:text-sapphire-tint/40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
@@ -89,7 +96,7 @@ import Testimonials from '../components/Testimonials.astro';
         </ScrollReveal>
 
         <!-- Arrow 2 -->
-        <div class="hidden md:flex items-center justify-center">
+        <div class="hidden md:flex items-center justify-center pipeline-arrow-pulse">
           <svg class="w-8 h-8 text-sapphire/40 dark:text-sapphire-tint/40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
@@ -138,6 +145,16 @@ import Testimonials from '../components/Testimonials.astro';
       </ScrollReveal>
     </div>
   </section>
+
+  <!-- Results Showcase Section -->
+  <ScrollReveal>
+    <ResultsShowcase />
+  </ScrollReveal>
+
+  <!-- Testimonials Section -->
+  <ScrollReveal>
+    <Testimonials />
+  </ScrollReveal>
 
   <!-- Why Oriflect Section -->
   <section class="bg-sapphire-tint dark:bg-dark-surface py-20 px-6">
@@ -202,14 +219,9 @@ import Testimonials from '../components/Testimonials.astro';
     </div>
   </section>
 
-  <!-- Results Showcase Section -->
+  <!-- Featured Blog Posts Section -->
   <ScrollReveal>
-    <ResultsShowcase />
-  </ScrollReveal>
-
-  <!-- Testimonials Section -->
-  <ScrollReveal>
-    <Testimonials />
+    <FeaturedPosts posts={posts.slice(0, 3)} />
   </ScrollReveal>
 
   <!-- Final CTA Section -->

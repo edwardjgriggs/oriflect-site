@@ -166,6 +166,21 @@
   }
 }
 
+/* ─── Pipeline Arrow Pulse Animation (S05) ─── */
+
+@keyframes pipeline-pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.pipeline-arrow-pulse {
+  animation: pipeline-pulse 2s ease-in-out infinite;
+}
+
 /* ─── Scroll Reveal Animations (S02) ─── */
 
 .scroll-reveal {
@@ -203,6 +218,10 @@
     opacity: 1;
     transform: none;
     transition: none;
+  }
+
+  .pipeline-arrow-pulse {
+    animation: none;
   }
 }
 

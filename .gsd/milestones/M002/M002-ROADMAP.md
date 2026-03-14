@@ -65,7 +65,7 @@ This milestone is complete only when all are true:
 - [x] **S04: Social Proof & Results Showcase** `risk:medium` `depends:[S02]`
   > After this: Homepage has animated before/after client results cards and a rotating testimonial section, all with scroll-reveal animations.
 
-- [ ] **S05: Service Pipeline & Blog Feature** `risk:low` `depends:[S02,S04]`
+- [x] **S05: Service Pipeline & Blog Feature** `risk:low` `depends:[S02,S04]`
   > After this: Homepage service pipeline animates as a connected flow with pulsing connections; latest blog posts are featured on homepage below the results section.
 
 - [ ] **S06: Micro-interactions & Final Polish** `risk:low` `depends:[S01,S02,S03,S04,S05]`
