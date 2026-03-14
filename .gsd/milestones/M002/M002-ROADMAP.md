@@ -68,7 +68,7 @@ This milestone is complete only when all are true:
 - [x] **S05: Service Pipeline & Blog Feature** `risk:low` `depends:[S02,S04]`
   > After this: Homepage service pipeline animates as a connected flow with pulsing connections; latest blog posts are featured on homepage below the results section.
 
-- [ ] **S06: Micro-interactions & Final Polish** `risk:low` `depends:[S01,S02,S03,S04,S05]`
+- [x] **S06: Micro-interactions & Final Polish** `risk:low` `depends:[S01,S02,S03,S04,S05]`
   > After this: All cards, buttons, and links have polished hover states; `prefers-reduced-motion` verified; performance audited; site builds clean.
 
 ## Boundary Map

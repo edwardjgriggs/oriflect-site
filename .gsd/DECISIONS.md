@@ -20,3 +20,4 @@
 | D012 | M002/S04 | pattern | Results card data approach | Map over data array rather than hand-coded cards | Easier to update content; consistent styling guaranteed across all cards | Yes — if cards need unique layouts |
 | D013 | M002/S05 | pattern | Pipeline arrow animation | CSS-only pulse keyframe on arrow containers (no JS) | Simplest approach; inherently respects reduced-motion; no runtime cost | No |
 | D014 | M002/S05 | pattern | Homepage section order | hero → pipeline → metrics → results → testimonials → why oriflect → blog → CTA | Keeps all existing sections; blog naturally leads into CTA; results/testimonials grouped as social proof | Yes — if sections added/removed |
+| D015 | M002/S06 | pattern | Global CSS for focus/active states | Global selectors (`a`, `button`, `[role="button"]`) in global.css | Minimizes file touches; covers all current and future interactive elements automatically | Yes — if component-scoped styles preferred |

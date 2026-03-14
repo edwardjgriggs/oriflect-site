@@ -205,6 +205,34 @@
   transform: translateY(0) translateX(0);
 }
 
+/* ─── Focus-visible & Active States ─── */
+
+/*
+  Global focus-visible ring for interactive elements.
+  Uses ember brand color for high-contrast visibility.
+*/
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--color-ember);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/*
+  Active press feedback — subtle scale-down on buttons and button-like links.
+*/
+button:active,
+[role="button"]:active,
+a[href]:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease-out;
+}
+
 /* ─── Reduced Motion & Fallbacks ─── */
 
 @media (prefers-reduced-motion: reduce) {
@@ -222,6 +250,20 @@
 
   .pipeline-arrow-pulse {
     animation: none;
+  }
+
+  /* Suppress transform-based hover effects (card lift, etc.) */
+  *[class*="hover:-translate"],
+  *[class*="hover:translate"] {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  /* Suppress active press scale in reduced-motion */
+  button:active,
+  [role="button"]:active,
+  a[href]:active {
+    transform: none !important;
   }
 }
 
