@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ScrollReveal from '../components/ScrollReveal.astro';
 ---
 
 <BaseLayout title="Services" description="AI consulting services -- discovery audit, implementation, and staff training for small and medium businesses.">
@@ -16,6 +17,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <!-- Section 1: AI Discovery Audit -->
   <section id="audit" class="bg-ivory dark:bg-dark-bg py-20 px-6">
+    <ScrollReveal>
     <div class="max-w-5xl mx-auto">
       <span class="inline-block bg-gold text-white text-sm font-bold px-3 py-1 rounded-full uppercase tracking-wide">
         Start Here
@@ -122,10 +124,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </a>
       </div>
     </div>
+    </ScrollReveal>
   </section>
 
   <!-- Section 2: AI Implementation -->
   <section id="implementation" class="border-t border-sapphire/10 dark:border-white/5 bg-sapphire-tint dark:bg-dark-surface py-20 px-6">
+    <ScrollReveal>
     <div class="max-w-5xl mx-auto">
       <h2 class="font-heading text-3xl md:text-4xl font-bold text-sapphire dark:text-sapphire-tint">
         AI Implementation
@@ -227,10 +231,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </a>
       </div>
     </div>
+    </ScrollReveal>
   </section>
 
   <!-- Section 3: Staff Training -->
   <section id="training" class="border-t border-sapphire/10 dark:border-white/5 bg-ivory dark:bg-dark-bg py-20 px-6">
+    <ScrollReveal>
     <div class="max-w-5xl mx-auto">
       <h2 class="font-heading text-3xl md:text-4xl font-bold text-sapphire dark:text-sapphire-tint">
         Staff Training
@@ -331,9 +337,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </a>
       </div>
     </div>
+    </ScrollReveal>
   </section>
 
   <!-- Closing CTA Section -->
+  <ScrollReveal>
   <section class="bg-sapphire py-16 px-6 text-center">
     <h2 class="font-heading text-2xl md:text-3xl text-white font-bold">
       Not Sure Where to Start?
@@ -347,5 +355,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </a>
     </div>
   </section>
+  </ScrollReveal>
+
+  <noscript><style>.scroll-reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
 
 </BaseLayout>

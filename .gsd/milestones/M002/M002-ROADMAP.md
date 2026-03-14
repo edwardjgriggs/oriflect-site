@@ -56,7 +56,7 @@ This milestone is complete only when all are true:
 - [x] **S01: Animated Hero & AI Visual Language** `risk:medium` `depends:[]`
   > After this: Homepage hero has a subtle animated background with floating nodes/shapes evoking AI; reusable CSS animation patterns established for downstream slices.
 
-- [ ] **S02: Scroll Reveal & Metrics Animations** `risk:low` `depends:[]`
+- [x] **S02: Scroll Reveal & Metrics Animations** `risk:low` `depends:[]`
   > After this: All pages have sections that fade/slide into view on scroll; homepage has a metrics section with numbers that count up when scrolled into view.
 
 - [ ] **S03: View Transitions & Page Flow** `risk:low` `depends:[]`

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ScrollReveal from '../components/ScrollReveal.astro';
 
 const web3formsKey = import.meta.env.PUBLIC_WEB3FORMS_KEY;
 const calendlyUrl = import.meta.env.PUBLIC_CALENDLY_URL || 'https://calendly.com/oriflect/discovery-call';
@@ -19,6 +20,7 @@ const calendlyUrl = import.meta.env.PUBLIC_CALENDLY_URL || 'https://calendly.com
 
   <!-- Side-by-side: Form + Calendly -->
   <section class="bg-ivory dark:bg-dark-bg py-20 px-6">
+    <ScrollReveal>
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
 
       <!-- LEFT: Contact Form -->
@@ -129,9 +131,11 @@ const calendlyUrl = import.meta.env.PUBLIC_CALENDLY_URL || 'https://calendly.com
       </div>
 
     </div>
+    </ScrollReveal>
   </section>
 
   <!-- Contact Details Strip -->
+  <ScrollReveal>
   <section class="bg-sapphire-tint dark:bg-dark-surface py-12 px-6">
     <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-center">
       <!-- Email -->
@@ -161,9 +165,11 @@ const calendlyUrl = import.meta.env.PUBLIC_CALENDLY_URL || 'https://calendly.com
       </div>
     </div>
   </section>
+  </ScrollReveal>
 
   <!-- FAQ Section -->
   <section class="bg-ivory dark:bg-dark-bg py-20 px-6">
+    <ScrollReveal>
     <div class="max-w-4xl mx-auto">
       <h2 class="font-heading text-3xl md:text-4xl font-bold text-sapphire dark:text-sapphire-tint text-center mb-12">
         Frequently Asked Questions
@@ -201,7 +207,10 @@ const calendlyUrl = import.meta.env.PUBLIC_CALENDLY_URL || 'https://calendly.com
         </div>
       </div>
     </div>
+    </ScrollReveal>
   </section>
+
+  <noscript><style>.scroll-reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
 
   <!-- Calendly Init Script -->
   <script is:inline>

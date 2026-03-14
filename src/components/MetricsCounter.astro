@@ -1,0 +1,61 @@
+---
+interface Props {
+  value: number;
+  suffix?: string;
+  label: string;
+}
+
+const { value, suffix = '', label } = Astro.props;
+---
+
+<div class="metrics-counter text-center">
+  <div class="font-heading font-bold text-4xl md:text-5xl text-ember">
+    <span data-count-to={value}>0</span>{suffix && <span>{suffix}</span>}
+  </div>
+  <p class="font-body text-charcoal/80 dark:text-dark-text/80 mt-2 text-sm uppercase tracking-wide font-medium">
+    {label}
+  </p>
+</div>
+
+<script>
+  function easeOutQuart(t: number): number {
+    return 1 - Math.pow(1 - t, 4);
+  }
+
+  const counterObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        const el = entry.target as HTMLElement;
+        const target = parseInt(el.dataset.countTo || '0', 10);
+        const duration = 2000;
+        const start = performance.now();
+
+        function tick(now: number) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = easeOutQuart(progress);
+          el.textContent = Math.round(eased * target).toString();
+
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          }
+        }
+
+        requestAnimationFrame(tick);
+        counterObserver.unobserve(el);
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  function initCounters() {
+    document.querySelectorAll<HTMLElement>('[data-count-to]').forEach((el) => {
+      counterObserver.observe(el);
+    });
+  }
+
+  initCounters();
+  document.addEventListener('astro:after-swap', initCounters);
+</script>

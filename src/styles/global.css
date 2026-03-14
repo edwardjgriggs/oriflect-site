@@ -166,10 +166,49 @@
   }
 }
 
+/* ─── Scroll Reveal Animations (S02) ─── */
+
+.scroll-reveal {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal--up {
+  transform: translateY(20px);
+}
+
+.scroll-reveal--left {
+  transform: translateX(-20px);
+}
+
+.scroll-reveal--right {
+  transform: translateX(20px);
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+
+/* ─── Reduced Motion & Fallbacks ─── */
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     animation-play-state: paused !important;
   }
+
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* No-JS fallback: make scroll-reveal elements visible */
+noscript + .scroll-reveal,
+.no-js .scroll-reveal {
+  opacity: 1;
+  transform: none;
 }

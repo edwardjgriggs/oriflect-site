@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ScrollReveal from '../components/ScrollReveal.astro';
 
 const allPosts = await getCollection('blog');
 const posts = allPosts.sort(
@@ -22,6 +23,7 @@ const posts = allPosts.sort(
 
   <!-- Post Listing -->
   <section class="bg-ivory dark:bg-dark-bg py-20 px-6">
+    <ScrollReveal>
     <div class="max-w-4xl mx-auto">
 
       {posts.length === 0 ? (
@@ -73,6 +75,9 @@ const posts = allPosts.sort(
       )}
 
     </div>
+    </ScrollReveal>
   </section>
+
+  <noscript><style>.scroll-reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
 
 </BaseLayout>
