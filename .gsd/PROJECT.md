@@ -10,14 +10,17 @@ The site must clearly communicate Oriflect's three services (AI Discovery Audit,
 
 ## Current State
 
-- Home page: full hero, service pipeline cards, "Why Oriflect" section, CTA
-- Services page: full three-service layout with timelines, deliverables, CTAs
-- About page: real content — Edward Griggs, real bio, real headshot (`/founder.png`)
-- Blog page: placeholder ("coming soon") — no content or routing
-- Contact page: Web3Forms contact form + Calendly inline embed + FAQ
-- Header: sticky nav with desktop + mobile responsive menu and theme toggle
+- Home page: animated hero with AI-themed floating nodes, service pipeline with pulsing connectors, animated metrics counters, before/after results showcase, rotating testimonials, featured blog posts, CTA — all with scroll-reveal animations
+- Services page: full three-service layout with timelines, deliverables, CTAs, scroll-reveal animations
+- About page: real content — Edward Griggs, real bio, real headshot (`/founder.png`), scroll-reveal animations
+- Blog page: content collection listing with scroll-reveal animations
+- Contact page: Web3Forms contact form + Calendly inline embed + FAQ, scroll-reveal animations
+- Header: sticky nav with desktop + mobile responsive menu and theme toggle (view-transition safe)
 - Footer: brand, contact info, social links
-- Dark mode: fully wired via localStorage + CSS variable theme
+- Dark mode: fully wired via localStorage + CSS variable theme, persists across view transitions
+- View Transitions: smooth cross-fade navigation between all pages via Astro ClientRouter
+- Micro-interactions: focus-visible rings, active press feedback on all interactive elements
+- Accessibility: prefers-reduced-motion disables/reduces all animations site-wide
 - Calendly: popup on all CTAs, inline embed on Contact page
 - GitHub remote: https://github.com/edwardjgriggs/oriflect-site.git (main branch)
 
@@ -25,9 +28,11 @@ The site must clearly communicate Oriflect's three services (AI Discovery Audit,
 
 - Astro 5 with TypeScript
 - Tailwind CSS v4 (CSS-first config via `@theme` in global.css)
-- `BaseLayout.astro` wraps all pages — handles fonts, dark mode init, Calendly assets
-- Component pattern: `Header.astro`, `Footer.astro`, `Logo.astro`, `ThemeToggle.astro`
-- No CMS — content is inline in `.astro` files; blog posts will use Astro content collections
+- `BaseLayout.astro` wraps all pages — handles fonts, dark mode init, Calendly assets, ClientRouter view transitions
+- Component pattern: `Header.astro`, `Footer.astro`, `Logo.astro`, `ThemeToggle.astro`, `ScrollReveal.astro`, `MetricsCounter.astro`, `HeroAnimation.astro`, `ResultsShowcase.astro`, `Testimonials.astro`, `FeaturedPosts.astro`
+- Interactive scripts use `astro:page-load` for re-initialization after view transitions
+- `astro:after-swap` used for pre-paint DOM state (dark mode, menu close)
+- No CMS — content is inline in `.astro` files; blog posts use Astro content collections
 - Brand colors defined as CSS variables: sapphire, gold, ember, charcoal, ivory, dark-bg, etc.
 - Font stack: Montserrat (heading), Inter (body), Playfair Display (accent), JetBrains Mono (code)
 
@@ -38,4 +43,4 @@ See `.gsd/REQUIREMENTS.md` for the explicit capability contract, requirement sta
 ## Milestone Sequence
 
 - ✅ M001: Site Enhancement v1
-- 🔄 M002: Site Enhancement v2 — S01 ✅, S02 ✅, S03 ✅; S04–S06 remaining
+- ✅ M002: Site Enhancement v2 — Kinetic & Polished
