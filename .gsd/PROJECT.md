@@ -13,14 +13,13 @@ The site must clearly communicate Oriflect's three services (AI Discovery Audit,
 - Home page: full hero, service pipeline cards, "Why Oriflect" section, CTA
 - Services page: full three-service layout with timelines, deliverables, CTAs
 - About page: real content — Edward Griggs, real bio, real headshot (`/founder.png`)
-- Blog page: real post listing at `/blog` + individual post pages at `/blog/[slug]` — Astro 5 Content Layer, one authored post
+- Blog page: placeholder ("coming soon") — no content or routing
 - Contact page: Web3Forms contact form + Calendly inline embed + FAQ
 - Header: sticky nav with desktop + mobile responsive menu and theme toggle
 - Footer: brand, contact info, social links
 - Dark mode: fully wired via localStorage + CSS variable theme
 - Calendly: popup on all CTAs, inline embed on Contact page
 - GitHub remote: https://github.com/edwardjgriggs/oriflect-site.git (main branch)
-- M001 complete: blog system, real founder content, visual polish — all validated and pushed
 
 ## Architecture / Key Patterns
 
@@ -28,7 +27,7 @@ The site must clearly communicate Oriflect's three services (AI Discovery Audit,
 - Tailwind CSS v4 (CSS-first config via `@theme` in global.css)
 - `BaseLayout.astro` wraps all pages — handles fonts, dark mode init, Calendly assets
 - Component pattern: `Header.astro`, `Footer.astro`, `Logo.astro`, `ThemeToggle.astro`
-- No CMS — content is inline in `.astro` files; blog posts use Astro 5 Content Layer (`src/content/config.ts` with glob() loader + Zod schema)
+- No CMS — content is inline in `.astro` files; blog posts will use Astro content collections
 - Brand colors defined as CSS variables: sapphire, gold, ember, charcoal, ivory, dark-bg, etc.
 - Font stack: Montserrat (heading), Inter (body), Playfair Display (accent), JetBrains Mono (code)
 
@@ -38,5 +37,4 @@ See `.gsd/REQUIREMENTS.md` for the explicit capability contract, requirement sta
 
 ## Milestone Sequence
 
-- [x] M001: Site Enhancement v1 — Real founder content, blog system, visual polish. All validated and pushed.
-- [ ] M002: Site Enhancement v2 — Kinetic design, social proof, AI visual language, view transitions, micro-interactions.
+- [ ] M001: Site Enhancement v1 — S01 ✅ complete; S02 (Blog) and S03 (Polish) remaining
