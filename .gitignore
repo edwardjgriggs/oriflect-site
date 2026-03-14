@@ -52,6 +52,9 @@ tmp/
 
 # ── GSD baseline (auto-generated) ──
 .gsd/worktrees/
+<<<<<<< HEAD
 
 # ── GSD baseline (auto-generated) ──
+=======
+>>>>>>> gsd/M002/S01
 .gsd/completed-units.json

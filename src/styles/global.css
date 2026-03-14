@@ -136,3 +136,40 @@
   border-left-color: var(--color-sapphire-tint);
   color: var(--color-dark-text);
 }
+
+/* ─── Reusable animation keyframes (S01: AI Visual Language) ─── */
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-30px) translateX(8px);
+  }
+  50% {
+    transform: translateY(-15px) translateX(-6px);
+  }
+  75% {
+    transform: translateY(-40px) translateX(4px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes pulse-line {
+  0%, 100% {
+    opacity: 0.08;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-play-state: paused !important;
+  }
+}

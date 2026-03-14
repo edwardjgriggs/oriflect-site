@@ -1,0 +1,73 @@
+---
+// HeroAnimation.astro — Animated AI neural network background for hero section
+// Renders ~15 floating dot nodes and 4 SVG connecting lines with pulse animation.
+// Sits behind hero content via z-index:0; pointer-events:none prevents click interference.
+// Dark mode adapts node colors. prefers-reduced-motion pauses all animations via global.css.
+---
+
+<div class="hero-animation" aria-hidden="true">
+  <!-- Floating nodes -->
+  <div class="node" style="width:6px;height:6px;top:12%;left:8%;opacity:0.2;animation-duration:22s;animation-delay:0s;"></div>
+  <div class="node" style="width:4px;height:4px;top:25%;left:18%;opacity:0.15;animation-duration:28s;animation-delay:-4s;"></div>
+  <div class="node" style="width:8px;height:8px;top:60%;left:5%;opacity:0.25;animation-duration:18s;animation-delay:-2s;"></div>
+  <div class="node" style="width:5px;height:5px;top:80%;left:15%;opacity:0.18;animation-duration:35s;animation-delay:-8s;"></div>
+  <div class="node" style="width:7px;height:7px;top:10%;left:45%;opacity:0.22;animation-duration:25s;animation-delay:-6s;"></div>
+  <div class="node" style="width:4px;height:4px;top:35%;left:55%;opacity:0.15;animation-duration:32s;animation-delay:-10s;"></div>
+  <div class="node" style="width:6px;height:6px;top:70%;left:40%;opacity:0.2;animation-duration:20s;animation-delay:-3s;"></div>
+  <div class="node" style="width:5px;height:5px;top:50%;left:72%;opacity:0.18;animation-duration:38s;animation-delay:-12s;"></div>
+  <div class="node" style="width:8px;height:8px;top:15%;left:82%;opacity:0.3;animation-duration:16s;animation-delay:-1s;"></div>
+  <div class="node" style="width:4px;height:4px;top:45%;left:90%;opacity:0.15;animation-duration:30s;animation-delay:-7s;"></div>
+  <div class="node" style="width:6px;height:6px;top:85%;left:78%;opacity:0.22;animation-duration:24s;animation-delay:-5s;"></div>
+  <div class="node" style="width:5px;height:5px;top:30%;left:35%;opacity:0.17;animation-duration:27s;animation-delay:-9s;"></div>
+  <div class="node" style="width:7px;height:7px;top:55%;left:60%;opacity:0.25;animation-duration:19s;animation-delay:-2s;"></div>
+  <div class="node" style="width:4px;height:4px;top:90%;left:50%;opacity:0.15;animation-duration:40s;animation-delay:-14s;"></div>
+  <div class="node" style="width:6px;height:6px;top:5%;left:65%;opacity:0.2;animation-duration:23s;animation-delay:-11s;"></div>
+
+  <!-- Connecting lines -->
+  <svg class="line" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <line x1="8" y1="12" x2="45" y2="10" stroke="currentColor" stroke-width="0.3" />
+  </svg>
+  <svg class="line" style="animation-delay:-3s;" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <line x1="18" y1="25" x2="55" y2="35" stroke="currentColor" stroke-width="0.3" />
+  </svg>
+  <svg class="line" style="animation-delay:-6s;" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <line x1="5" y1="60" x2="40" y2="70" stroke="currentColor" stroke-width="0.3" />
+  </svg>
+  <svg class="line" style="animation-delay:-9s;" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <line x1="72" y1="50" x2="90" y2="45" stroke="currentColor" stroke-width="0.3" />
+  </svg>
+</div>
+
+<style>
+  .hero-animation {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .node {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    animation: float linear infinite;
+  }
+
+  :global(.dark) .node {
+    background: rgba(200, 220, 255, 0.8);
+  }
+
+  .line {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.3);
+    animation: pulse-line 8s ease-in-out infinite;
+  }
+
+  :global(.dark) .line {
+    color: rgba(200, 220, 255, 0.3);
+  }
+</style>

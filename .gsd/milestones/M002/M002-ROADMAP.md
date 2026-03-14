@@ -53,7 +53,7 @@ This milestone is complete only when all are true:
 
 ## Slices
 
-- [ ] **S01: Animated Hero & AI Visual Language** `risk:medium` `depends:[]`
+- [x] **S01: Animated Hero & AI Visual Language** `risk:medium` `depends:[]`
   > After this: Homepage hero has a subtle animated background with floating nodes/shapes evoking AI; reusable CSS animation patterns established for downstream slices.
 
 - [ ] **S02: Scroll Reveal & Metrics Animations** `risk:low` `depends:[]`

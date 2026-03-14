@@ -1,12 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroAnimation from '../components/HeroAnimation.astro';
 ---
 
 <BaseLayout title="Home" description="Strategic AI consulting for small and medium businesses. Discover, implement, and master AI solutions that drive real results.">
 
   <!-- Hero Section -->
-  <section class="min-h-[calc(100vh-4rem)] flex items-center justify-center px-6" style="background: linear-gradient(135deg, #0A2463 0%, #1A3A7A 100%);">
-    <div class="text-center max-w-3xl">
+  <section class="relative min-h-[calc(100vh-4rem)] flex items-center justify-center px-6 overflow-hidden" style="background: linear-gradient(135deg, #0A2463 0%, #1A3A7A 100%);">
+    <HeroAnimation />
+    <div class="relative z-10 text-center max-w-3xl">
       <h1 class="font-heading font-bold text-5xl md:text-6xl text-white leading-tight mb-6">
         Transform Your Operations with AI That Delivers Results
       </h1>
