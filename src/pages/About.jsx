@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import headshot from '../assets/headshot.png'
 
 const values = [
   {
@@ -75,7 +76,7 @@ export default function About() {
               <div className="absolute -inset-4 bg-primary/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative aspect-[4/5] overflow-hidden bg-surface-container">
                 <img
-                  src="/src/assets/headshot.png"
+                  src={headshot}
                   alt="Edward Griggs, Founder & Chief Architect"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
