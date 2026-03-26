@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import heroBg from '../assets/hero-bg.jpg'
 
 const stats = [
   { value: '50+', label: 'Audits Completed' },
@@ -56,9 +57,9 @@ export default function Home() {
   return (
     <div className="pt-[72px]">
       {/* ── Hero ── */}
-      <section className="relative min-h-[90vh] flex flex-col justify-center items-start px-8 md:px-24 overflow-hidden grid-bg">
-        {/* Left gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10" />
+      <section className="relative min-h-[90vh] flex flex-col justify-center items-start px-8 md:px-24 overflow-hidden grid-bg" style={{ backgroundImage: `url(${heroBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        {/* Full overlay to keep image very subtle */}
+        <div className="absolute inset-0 bg-surface/88 z-10" />
 
         {/* Background image */}
         <div className="absolute right-0 top-0 w-full md:w-1/2 h-full opacity-40 z-0">
