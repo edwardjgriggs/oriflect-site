@@ -14,24 +14,18 @@ const services = [
     title: 'AI Discovery Audit',
     desc: 'We analyze your workflows, identify where AI can save time and money, and deliver a prioritized roadmap with projected ROI for each opportunity.',
     link: '/services#audit',
-    span: 'md:col-span-8',
-    bg: 'bg-surface-container',
   },
   {
     icon: 'memory',
     title: 'AI Implementation',
     desc: 'We build the automations and integrations identified in your audit — custom AI tools that slot right into your existing workflows and start saving time on day one.',
     link: '/services#implementation',
-    span: 'md:col-span-4',
-    bg: 'bg-surface-container-low',
   },
   {
     icon: 'school',
     title: 'Staff Training',
     desc: 'We equip your team with the skills and confidence to use AI tools effectively — hands-on workshops, custom curriculum, and ongoing support so the results stick.',
     link: '/services#training',
-    span: 'md:col-span-4',
-    bg: 'bg-surface-container-low',
   },
 ]
 
@@ -58,16 +52,16 @@ export default function Home() {
     <div className="pt-[72px]">
       {/* ── Hero ── */}
       <section className="relative min-h-[90vh] flex flex-col justify-center items-start px-8 md:px-24 overflow-hidden">
-        {/* Background image — 10-15% opacity */}
+        {/* Background image — right side, ~20% opacity */}
         <img
           src={heroBg}
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover object-center z-0"
-          style={{ opacity: 0.12 }}
+          className="absolute inset-0 w-full h-full object-cover object-right z-0"
+          style={{ opacity: 0.20 }}
         />
-        {/* Navy overlay */}
-        <div className="absolute inset-0 z-10" style={{ background: 'linear-gradient(160deg, #0B1221 60%, #0d1a2e 100%)' }} />
+        {/* Navy gradient — heavy on left where text is, fades right */}
+        <div className="absolute inset-0 z-10" style={{ background: 'linear-gradient(to right, #0B1221 45%, rgba(11,18,33,0.75) 75%, rgba(11,18,33,0.5) 100%)' }} />
 
         {/* Content */}
         <div className="relative z-20 max-w-screen-xl w-full mx-auto">
@@ -152,21 +146,21 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-1 bg-outline-variant/20">
-            {services.map(({ icon, title, desc, link, span, bg }) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-1 bg-outline-variant/20">
+            {services.map(({ icon, title, desc, link }) => (
               <div
                 key={title}
-                className={`${span} ${bg} p-10 md:p-12 group hover:bg-surface-container-high transition-colors`}
+                className="bg-surface-container p-10 group hover:bg-surface-container-high transition-colors"
               >
-                <div className="flex flex-col h-full justify-between min-h-[240px]">
+                <div className="flex flex-col h-full justify-between min-h-[260px]">
                   <span className="material-symbols-outlined text-primary text-4xl mb-10">
                     {icon}
                   </span>
                   <div>
-                    <h3 className="font-headline text-2xl md:text-3xl font-bold mb-4 text-on-surface">
+                    <h3 className="font-headline text-2xl font-bold mb-4 text-on-surface">
                       {title}
                     </h3>
-                    <p className="text-on-surface-variant max-w-md mb-8 text-sm leading-relaxed">
+                    <p className="text-on-surface-variant mb-8 text-sm leading-relaxed">
                       {desc}
                     </p>
                     <Link
