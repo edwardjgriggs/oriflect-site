@@ -6,33 +6,33 @@ const services = [
     phase: '01',
     tag: 'Start Here',
     title: 'AI Discovery Audit',
-    desc: 'A comprehensive 360° technical and strategic diagnostic designed to identify high-impact AI opportunities within your existing workflow architecture.',
+    desc: 'This is your starting point. We analyze your current workflows, identify where AI can save you time and money, and deliver a prioritized roadmap with clear ROI projections. No jargon, no guesswork — just a practical plan you can act on immediately.',
     deliverables: [
-      'Infrastructure Readiness Report',
-      'ROI Projection Matrix',
-      'Implementation Roadmap',
-      'Prioritized Opportunity List',
+      'AI Opportunity Report',
+      'ROI projections for each opportunity',
+      'Prioritized implementation roadmap',
+      'Tool and platform recommendations',
     ],
     steps: [
       {
         n: '01',
-        title: 'Stakeholder Interviews',
-        desc: 'Deep-dive sessions with departmental heads to understand pain points and operational friction.',
+        title: 'Discovery Call',
+        desc: 'Understand your business.',
       },
       {
         n: '02',
-        title: 'Data Integrity Review',
-        desc: 'Quantitative analysis of available data silos and quality benchmarks for LLM ingestion.',
+        title: 'Workflow Analysis',
+        desc: 'Map current processes.',
       },
       {
         n: '03',
-        title: 'Gap Analysis',
-        desc: 'Identifying the distance between current capabilities and a future AI-integrated state.',
+        title: 'Opportunity Mapping',
+        desc: 'Identify AI applications.',
       },
       {
         n: '04',
-        title: 'Final Dossier',
-        desc: 'Presentation of the strategic blueprint and prioritized execution list.',
+        title: 'Report Delivery',
+        desc: 'Prioritized roadmap with ROI projections.',
       },
     ],
     panelIcon: 'analytics',
@@ -43,27 +43,32 @@ const services = [
     phase: '02',
     tag: null,
     title: 'AI Implementation',
-    desc: 'Transitioning from strategy to production. We build, deploy, and scale custom AI agents and workflows that drive tangible bottom-line results.',
+    desc: 'The core engagement. We select the right tools, build automations and integrations, and get everything running in your environment. Common projects include email automation, AI-powered CRM workflows, document processing, and chatbot deployment — all tailored to deliver measurable results for your business.',
     deliverables: null,
     metrics: [
-      { label: 'Avg. Efficiency Gain', value: '30%+' },
-      { label: 'Deployment', value: 'Zero Downtime' },
+      { label: 'Avg. Time Saved', value: '85%' },
+      { label: 'Support Window', value: '30 Days' },
     ],
     steps: [
       {
         n: '01',
-        title: 'Custom Model Tuning',
-        desc: 'Fine-tuning open-source or proprietary models on your unique corporate dataset.',
+        title: 'Solution Design',
+        desc: 'Architect the approach.',
       },
       {
         n: '02',
-        title: 'API Integration',
-        desc: 'Seamlessly embedding AI capabilities into your legacy software stack and ERPs.',
+        title: 'Build and Configure',
+        desc: 'Set up tools and automations.',
       },
       {
         n: '03',
-        title: 'Testing & QA',
-        desc: 'Rigorous stress-testing of outputs to ensure safety, alignment, and accuracy.',
+        title: 'Testing and Refinement',
+        desc: 'Ensure everything works.',
+      },
+      {
+        n: '04',
+        title: 'Handoff and Training',
+        desc: 'You and your team are set up for success.',
       },
     ],
     panelIcon: 'memory',
@@ -74,13 +79,13 @@ const services = [
     phase: '03',
     tag: null,
     title: 'Staff Training',
-    desc: 'Ensuring the human element keeps pace with the digital. High-level workshops for executives and technical deep-dives for development teams.',
+    desc: 'AI only delivers value when your team actually uses it. We build custom training programs that ensure adoption sticks — from executive overviews to hands-on workshops for daily users. Your team walks away confident and capable, not confused.',
     deliverables: null,
     modules: [
-      { num: '01', title: 'AI Literacy Foundations', desc: 'Core concepts of generative AI and its impact on business ecosystems.' },
-      { num: '02', title: 'Prompt Engineering', desc: 'Practical workflows for maximizing output quality from large language models.' },
-      { num: '03', title: 'Ethics & Compliance', desc: 'Navigating the regulatory landscape and internal AI governance frameworks.' },
-      { num: '04', title: 'Future Roadmapping', desc: 'Continuous learning strategies for staying ahead of technological decay.' },
+      { num: '01', title: 'Needs Assessment', desc: 'Understand skill gaps.' },
+      { num: '02', title: 'Curriculum Design', desc: 'Custom training plan.' },
+      { num: '03', title: 'Live Workshops', desc: 'Hands-on sessions with real tools.' },
+      { num: '04', title: 'Follow-up Support', desc: 'Reference materials and recorded sessions.' },
     ],
     panelIcon: 'school',
     panelTitle: 'Educational Framework',
@@ -252,8 +257,7 @@ export default function Services() {
             Our <span className="text-primary italic">Services</span>
           </h1>
           <p className="font-body text-xl text-on-surface-variant max-w-2xl mt-8 leading-relaxed">
-            Precision-engineered AI solutions for businesses ready to move beyond the hype.
-            We bridge the gap between speculative technology and operational excellence.
+            End-to-end AI consulting tailored for small and medium businesses.
           </p>
         </div>
       </header>
@@ -273,19 +277,19 @@ export default function Services() {
           </div>
           <div className="text-center mb-14">
             <h2 className="font-headline text-4xl md:text-5xl font-bold text-on-background uppercase tracking-tighter mb-4">
-              Initialize Project
+              Get a Quote
             </h2>
             <p className="font-body text-on-surface-variant">
-              Provide your operational parameters to receive a custom tailored proposal.
+              Every project is different. Tell us what you need and we'll send you a custom proposal within 24 hours.
             </p>
           </div>
 
           {submitted ? (
             <div className="text-center py-16">
               <span className="material-symbols-outlined text-primary text-6xl mb-6 block">check_circle</span>
-              <h3 className="font-headline text-3xl font-bold text-on-surface mb-4">Request Received</h3>
+              <h3 className="font-headline text-3xl font-bold text-on-surface mb-4">Quote Request Received!</h3>
               <p className="text-on-surface-variant max-w-md mx-auto">
-                We'll review your parameters and reach out within 48 hours with a tailored proposal.
+                We'll review your project and send a custom proposal within 24 hours.
               </p>
             </div>
           ) : (
@@ -344,7 +348,7 @@ export default function Services() {
                     <option>AI Discovery Audit</option>
                     <option>AI Implementation</option>
                     <option>Staff Training</option>
-                    <option>Full Transformation Bundle</option>
+                    <option>Multiple or Not Sure</option>
                   </select>
                 </div>
               </div>
@@ -365,7 +369,7 @@ export default function Services() {
                   type="submit"
                   className="w-full bg-primary text-on-primary py-5 font-label font-bold uppercase tracking-[0.3em] text-sm hover:brightness-110 active:scale-[0.98] transition-all"
                 >
-                  Request Proposal
+                  Request My Quote
                 </button>
               </div>
             </form>
@@ -375,9 +379,12 @@ export default function Services() {
 
       {/* Closing CTA */}
       <section className="py-24 px-8 text-center border-t border-outline-variant/10 bg-surface">
-        <h3 className="font-headline text-2xl md:text-3xl font-medium text-on-background uppercase mb-8">
+        <h3 className="font-headline text-2xl md:text-3xl font-medium text-on-background uppercase mb-4">
           Not Sure Where to Start?
         </h3>
+        <p className="text-on-surface-variant text-sm mb-8 max-w-md mx-auto">
+          Most clients begin with an AI Discovery Audit. Request a quote and we'll figure out the best first step together.
+        </p>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6">
           <Link
             to="/roi"

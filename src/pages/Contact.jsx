@@ -2,20 +2,16 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    q: 'How do discovery calls work?',
-    a: 'Our discovery calls are technical deep-dives, not sales pitches. We analyze your existing data architecture and identify immediate bottlenecks or opportunities for LLM integration.',
+    q: 'What is a discovery call?',
+    a: 'A free 30-minute conversation where we learn about your business, identify AI opportunities, and discuss whether we\'re a good fit. No commitment required.',
   },
   {
-    q: 'What is the standard audit duration?',
-    a: 'A comprehensive AI Readiness Audit typically spans 3 to 5 weeks, depending on the complexity of your stack and the volume of proprietary data being analyzed.',
+    q: 'How long does an AI audit take?',
+    a: 'Most audits are completed within 1-2 weeks, depending on the complexity of your operations and the number of processes we evaluate.',
   },
   {
-    q: 'What technical expertise do you specialize in?',
-    a: 'We specialize in RAG (Retrieval-Augmented Generation) pipelines, fine-tuning open-source models (Llama, Mistral), and implementing secure, private AI infrastructure for enterprise-grade security.',
-  },
-  {
-    q: 'What does engagement pricing look like?',
-    a: 'Engagements are scoped and quoted individually based on business complexity, data volume, and desired outcomes. Discovery Audits start at a fixed project fee. Implementation is scoped after the audit.',
+    q: 'Do I need technical expertise to work with Oriflect?',
+    a: 'Not at all. We handle the technical side and explain everything in plain business terms. Our training programs ensure your team can confidently use any tools we implement.',
   },
 ]
 
@@ -74,8 +70,7 @@ export default function Contact() {
             Contact Us
           </h1>
           <p className="font-body text-xl text-on-surface-variant max-w-2xl leading-relaxed">
-            Get in touch with our team to discuss your AI strategy, request a quote,
-            or book a discovery call.
+            Get in touch or book a discovery call to explore how AI can transform your business.
           </p>
         </div>
       </section>
@@ -98,11 +93,10 @@ export default function Contact() {
                   mark_email_read
                 </span>
                 <h3 className="font-headline text-3xl font-bold text-on-surface mb-4">
-                  Message Transmitted
+                  Message Sent!
                 </h3>
                 <p className="text-on-surface-variant max-w-md mx-auto leading-relaxed">
-                  We've received your message and will respond within 24–48 hours.
-                  Check your inbox for a confirmation.
+                  Thanks! We'll be in touch within 24 hours.
                 </p>
               </div>
             ) : (
@@ -169,7 +163,7 @@ export default function Contact() {
                   type="submit"
                   className="w-full md:w-auto bg-primary text-on-primary px-12 py-4 font-bold uppercase tracking-widest text-sm hover:brightness-110 transition-all flex items-center justify-center gap-3"
                 >
-                  Transmit Message
+                  Send Message
                   <span className="material-symbols-outlined text-sm">arrow_forward</span>
                 </button>
               </form>
@@ -184,8 +178,7 @@ export default function Contact() {
                 Book a Discovery Call
               </h2>
               <p className="font-body text-sm text-on-surface-variant mb-8 leading-relaxed">
-                Sync directly with our lead architects. Choose a slot that fits your timeline
-                for a deep-dive technical alignment session.
+                Schedule a free 30-minute call to discuss your AI needs.
               </p>
               <div className="w-full aspect-video bg-surface-container-lowest border border-outline-variant/20 flex flex-col items-center justify-center p-8 text-center">
                 <span className="material-symbols-outlined text-primary mb-4 text-4xl">
@@ -271,13 +264,13 @@ export default function Contact() {
         </div>
         <div className="relative z-10 text-center px-8">
           <h2 className="font-headline text-4xl md:text-5xl font-black text-on-background mb-8 uppercase tracking-tighter">
-            Ready to Architect Your Future?
+            Ready to Get Started?
           </h2>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="bg-primary text-on-primary px-10 py-4 font-black uppercase tracking-widest text-sm hover:brightness-110 transition-all"
           >
-            Initialize Consultation
+            Book a Discovery Call
           </button>
         </div>
       </section>

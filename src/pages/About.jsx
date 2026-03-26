@@ -5,22 +5,22 @@ const values = [
   {
     icon: 'payments',
     title: 'ROI-First',
-    desc: "We don't implement technology for the sake of novelty. If it doesn't positively impact the bottom line, it doesn't belong in your stack.",
+    desc: "Every recommendation is backed by projected returns. We do not suggest AI for the sake of AI.",
   },
   {
     icon: 'visibility',
     title: 'Transparency',
-    desc: 'No black boxes. We explain the "why" behind every algorithm and the "how" of every implementation process.',
+    desc: 'Clear pricing, honest timelines, no hidden fees. You always know where you stand.',
   },
   {
     icon: 'hub',
     title: 'SMB-Native',
-    desc: 'Our strategies are built for the agility and constraints of mid-market businesses, not bloated corporate structures.',
+    desc: 'Our solutions are sized and priced for businesses with 5-200 employees, not enterprise leftovers.',
   },
   {
     icon: 'handshake',
     title: 'Partnership',
-    desc: "We don't just hand over a manual. We act as your fractional AI CTOs, guiding your journey through every phase of growth.",
+    desc: "We walk alongside you from audit through implementation to training. One team, the whole journey.",
   },
 ]
 
@@ -52,8 +52,7 @@ export default function About() {
                 About <span className="text-primary italic">Oriflect</span>
               </h1>
               <p className="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed">
-                Bridging the technological divide by bringing enterprise-grade AI architecture
-                to the small and medium business landscape.
+                AI consulting built for businesses like yours.
               </p>
             </div>
           </div>
@@ -83,7 +82,7 @@ export default function About() {
                 <div className="absolute bottom-0 left-0 p-8 bg-surface/90 backdrop-blur-md w-full border-t border-outline-variant/20">
                   <h3 className="font-headline text-2xl font-bold text-primary">Edward Griggs</h3>
                   <p className="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-1">
-                    Founder & Chief Architect
+                    Founder & AI Consultant
                   </p>
                 </div>
               </div>
@@ -97,23 +96,22 @@ export default function About() {
               </h2>
               <div className="space-y-6 text-on-surface-variant font-body text-lg leading-relaxed">
                 <p>
-                  After years in enterprise AI consulting, Edward Griggs noticed a disturbing trend:
-                  the most transformative technologies were being locked behind high-barrier paywalls
-                  and complex implementations only accessible to the Fortune 500.
+                  After years working in technology and artificial intelligence, one pattern
+                  became impossible to ignore: while large enterprises were racing ahead with
+                  dedicated AI teams and seven-figure budgets, small and medium businesses
+                  were left watching from the sidelines.
                 </p>
                 <p>
-                  Small and medium-sized businesses—the backbone of the economy—were being left
-                  behind. Not because AI wasn't relevant to them, but because no one was translating
-                  it into their language, their scale, their budget.
+                  The tools existed. The potential was there. But without a guide who
+                  understood both the technology and the reality of running a lean operation,
+                  most business owners had no clear path forward. That gap between what AI
+                  could do and what SMBs could actually access felt wrong.
                 </p>
                 <p>
-                  Oriflect was born from a single mission: to democratize advanced intelligence.
-                  We specialize in identifying the "AI Gap" in SMBs—transforming manual, high-friction
-                  processes into streamlined, automated workflows that drive real-world ROI.
-                </p>
-                <p className="italic text-on-surface font-medium border-l-2 border-primary pl-6">
-                  "The goal isn't just to use AI. The goal is to build an architectural foundation
-                  that scales your business without scaling your overhead."
+                  That realization became the spark behind Oriflect. The goal was simple:
+                  bring the same caliber of AI strategy and implementation that Fortune 500
+                  companies enjoy to businesses with 5 to 200 employees — at a price that
+                  makes sense and with results you can measure.
                 </p>
               </div>
             </div>
@@ -129,10 +127,9 @@ export default function About() {
           </div>
           <div className="md:col-span-8">
             <p className="font-headline text-4xl md:text-5xl font-light leading-tight text-on-surface">
-              To translate{' '}
-              <span className="text-primary font-bold">complex intelligence</span> into{' '}
-              <span className="text-primary font-bold">operational simplicity</span> for
-              every growing enterprise.
+              To make artificial intelligence{' '}
+              <span className="text-primary font-bold">accessible, practical, and profitable</span>{' '}
+              for small and medium businesses — delivering real ROI without the enterprise price tag or the industry jargon.
             </p>
           </div>
         </div>
@@ -198,16 +195,17 @@ export default function About() {
         <div className="max-w-5xl mx-auto text-center border border-outline-variant/30 py-24 px-8 md:px-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
           <h2 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter text-on-surface mb-8">
-            Ready to evolve?
+            Let's Talk About Your AI Journey
           </h2>
           <p className="font-body text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto">
-            The gap is closing. Ensure your business is on the right side of the intelligence divide.
+            Every great transformation starts with a conversation. Let us learn about
+            your business and show you what is possible.
           </p>
           <Link
             to="/contact"
             className="inline-flex items-center gap-2 bg-primary text-on-primary px-10 py-5 font-label font-bold text-sm uppercase tracking-[0.2em] hover:brightness-110 transition-all group"
           >
-            Let's Talk About Your AI Journey
+            Book a Discovery Call
             <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
               arrow_forward
             </span>

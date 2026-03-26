@@ -24,8 +24,7 @@ export default function Footer() {
               ORIFLECT
             </div>
             <p className="text-on-surface-variant text-xs font-body leading-relaxed max-w-xs">
-              Democratizing enterprise-grade AI for small and medium-sized businesses.
-              The Intelligence Architect for the modern SMB.
+              AI consulting for growing businesses.
             </p>
           </div>
 
@@ -54,17 +53,20 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-3">
               <a
-                href="mailto:hello@oriflect.ai"
+                href="mailto:hello@oriflect.com"
                 className="font-label uppercase tracking-[0.1em] text-[10px] text-on-surface opacity-60 hover:opacity-100 hover:text-[#D4AF37] transition-all"
               >
-                hello@oriflect.ai
+                hello@oriflect.com
               </a>
               <a
-                href="tel:+15559028432"
+                href="tel:+15551234567"
                 className="font-label uppercase tracking-[0.1em] text-[10px] text-on-surface opacity-60 hover:opacity-100 hover:text-[#D4AF37] transition-all"
               >
-                +1 (555) 902-8432
+                (555) 123-4567
               </a>
+              <span className="font-label uppercase tracking-[0.1em] text-[10px] text-on-surface opacity-60">
+                Remote / Nationwide
+              </span>
               <div className="flex gap-4 mt-2">
                 {legalLinks.map(({ href, label }) => (
                   <a
@@ -83,7 +85,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-outline-variant/20 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-label text-[10px] uppercase tracking-[0.1em] text-on-surface opacity-40">
-            © 2024 ORIFLECT. ALL RIGHTS RESERVED.
+            © 2026 ORIFLECT. ALL RIGHTS RESERVED.
           </p>
           <div className="flex gap-6">
             <a
@@ -93,6 +95,14 @@ export default function Footer() {
               className="font-label text-[10px] uppercase tracking-[0.1em] text-on-surface opacity-40 hover:opacity-80 hover:text-[#D4AF37] transition-all"
             >
               LinkedIn
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-label text-[10px] uppercase tracking-[0.1em] text-on-surface opacity-40 hover:opacity-80 hover:text-[#D4AF37] transition-all"
+            >
+              Twitter/X
             </a>
           </div>
         </div>

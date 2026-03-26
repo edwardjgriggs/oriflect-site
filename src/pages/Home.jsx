@@ -1,61 +1,54 @@
 import { Link } from 'react-router-dom'
 
 const stats = [
-  { value: '20%+', label: 'Avg. Hours Saved' },
-  { value: '< 90d', label: 'Time to First ROI' },
-  { value: '100%', label: 'SMB-Focused' },
+  { value: '50+', label: 'Audits Completed' },
+  { value: '3x', label: 'Average ROI' },
+  { value: '85%', label: 'Time Saved' },
+  { value: '100%', label: 'Client Satisfaction' },
 ]
 
 const services = [
   {
     icon: 'analytics',
     title: 'AI Discovery Audit',
-    desc: 'A comprehensive 360° diagnostic identifying high-impact AI opportunities within your existing workflow architecture.',
-    link: '/services',
+    desc: 'We analyze your workflows, identify where AI can save time and money, and deliver a prioritized roadmap with projected ROI for each opportunity.',
+    link: '/services#audit',
     span: 'md:col-span-8',
     bg: 'bg-surface-container',
   },
   {
     icon: 'memory',
     title: 'AI Implementation',
-    desc: 'Bespoke automation and tool integration built for your specific operations. Real workflows, real results.',
-    link: '/services',
+    desc: 'We build the automations and integrations identified in your audit — custom AI tools that slot right into your existing workflows and start saving time on day one.',
+    link: '/services#implementation',
     span: 'md:col-span-4',
     bg: 'bg-surface-container-low',
   },
   {
     icon: 'school',
     title: 'Staff Training',
-    desc: 'Ensuring the "Reflected" light stays on by empowering your team to own and extend every solution.',
-    link: '/services',
+    desc: 'We equip your team with the skills and confidence to use AI tools effectively — hands-on workshops, custom curriculum, and ongoing support so the results stick.',
+    link: '/services#training',
     span: 'md:col-span-4',
     bg: 'bg-surface-container-low',
-  },
-  {
-    icon: 'trending_up',
-    title: 'Strategic Roadmapping',
-    desc: 'A prioritized AI roadmap aligned with your growth goals—so you know exactly what to build, and when.',
-    link: '/services',
-    span: 'md:col-span-8',
-    bg: 'bg-surface-container',
   },
 ]
 
 const reasons = [
   {
     num: '01.',
-    title: 'ROI-First',
-    desc: 'We don\'t implement technology for novelty. If it doesn\'t impact the bottom line, it doesn\'t belong in your stack.',
+    title: 'SMB-Focused',
+    desc: 'Built for businesses with 5 to 200 employees, not enterprise bloat. Solutions sized to your team, your budget, and your goals.',
   },
   {
     num: '02.',
-    title: 'Transparent',
-    desc: 'No black boxes. We explain the "why" behind every algorithm and the "how" of every implementation.',
+    title: 'End-to-End',
+    desc: 'From discovery audit to implementation to training — one partner for the whole journey. No handoffs, no gaps, no starting over.',
   },
   {
     num: '03.',
-    title: 'SMB-Native',
-    desc: 'Strategies built for the agility and constraints of mid-market businesses, not bloated corporate structures.',
+    title: 'Measurable ROI',
+    desc: 'Every recommendation comes with projected returns so you can make informed decisions. We track results, not just deliverables.',
   },
 ]
 
@@ -87,13 +80,14 @@ export default function Home() {
           </div>
 
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-on-surface leading-[0.9] mb-8">
-            Intelligence <br /> Architected <br />
-            <span className="text-primary">for Your Business.</span>
+            Transform Your <br /> Operations with <br />
+            <span className="text-primary">AI That Delivers Results.</span>
           </h1>
 
           <p className="text-lg md:text-xl text-on-surface-variant font-light max-w-2xl mb-12 leading-relaxed">
-            Oriflect empowers small and medium-sized businesses with enterprise-grade AI—
-            custom automations, strategic roadmaps, and hands-on training that drive real ROI.
+            From uncovering hidden opportunities to building real automations your team
+            actually uses, we partner with you every step of the way. No jargon, no
+            bloat — just measurable results.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -143,7 +137,7 @@ export default function Home() {
               Core Services
             </span>
             <h2 className="font-headline text-4xl md:text-5xl font-bold mt-4 text-on-surface">
-              Precision-Engineered <br /> AI Solutions.
+              How We Help <br /> You Succeed.
             </h2>
           </div>
 
@@ -187,11 +181,10 @@ export default function Home() {
               The Oriflect Standard
             </span>
             <h2 className="font-headline text-4xl md:text-5xl font-bold mt-4 leading-tight text-on-surface">
-              Built on Trust. Delivered with Precision.
+              Why Oriflect?
             </h2>
             <p className="mt-6 text-on-surface-variant leading-relaxed text-sm">
-              We don't just build models; we build the infrastructure of consequence.
-              Our systems are designed to keep working long after we hand them over.
+              Strategic AI consulting for small and medium businesses ready to work smarter.
             </p>
             <Link
               to="/about"
@@ -248,18 +241,18 @@ export default function Home() {
         <div className="absolute inset-0 grid-bg opacity-30" />
         <div className="relative z-10 max-w-4xl mx-auto">
           <h2 className="font-headline text-5xl md:text-7xl font-bold tracking-tighter mb-8 leading-[1.1] text-on-surface">
-            Ready to close the <br />
-            <span className="text-primary">AI Gap?</span>
+            Ready to <br />
+            <span className="text-primary">Get Started?</span>
           </h2>
           <p className="text-lg md:text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto">
-            Partner with the Intelligence Architect for your SMB. Schedule a discovery call
-            with our team today.
+            Book a free discovery call and find out how AI can transform your operations.
+            No pressure, no jargon — just an honest conversation about what is possible.
           </p>
           <Link
             to="/contact"
             className="inline-block bg-primary text-on-primary px-12 py-5 font-label font-bold uppercase tracking-[0.2em] text-sm hover:brightness-110 active:scale-95 transition-all"
           >
-            Book a Consultation
+            Book a Discovery Call
           </Link>
         </div>
       </section>
