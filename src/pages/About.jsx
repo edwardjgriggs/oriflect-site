@@ -75,7 +75,7 @@ export default function About() {
               <div className="absolute -inset-4 bg-primary/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative aspect-[4/5] overflow-hidden bg-surface-container">
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbPrMytNttnb0qm23iTLC704HwR55lGHqXTqetzwR0dA0BOFk40qre1P65pcp7y5AxuYHtrlQqcwywmhbcFgkQz8DdfR1hf__clEUJUJJj5J8PKs6zTg2Pd9wl6dJWM3eaTiERS94HVdB097MVmHmKxwhsze3lbRmyKE62y2T6njuciliqL9fFsZsicyYNqR4OVkbD2ivlCg1IxAvDrK8zo_7TbhQg5I4DcKcJT5DZV4FM8dxZ_9qI4HyIvBINTxv4mOK5Uxto_j48"
+                  src="/src/assets/headshot.png"
                   alt="Edward Griggs, Founder & Chief Architect"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
