@@ -57,41 +57,51 @@ export default function Home() {
   return (
     <div className="pt-[72px]">
       {/* ── Hero ── */}
-      <section className="relative min-h-[90vh] flex flex-col justify-center items-start px-8 md:px-24 overflow-hidden grid-bg" style={{ backgroundImage: `url(${heroBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        {/* Navy gradient overlay — image barely visible beneath */}
-        <div className="absolute inset-0 z-10" style={{ background: 'linear-gradient(135deg, #0B1221 85%, rgba(11,18,33,0.96) 100%)' }} />
-
-        {/* Background image */}
-        <div className="absolute right-0 top-0 w-full md:w-1/2 h-full opacity-40 z-0">
-          <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGV5WZ2N2-FNsxzgI8IU_UGexpa5W-I4Fbx3BD3VsKedcv6iYZKLkPZ0BbTiEtGn18XZcRo2_A1Dpl46lXxvW_TTSYor6DjFcgT98kuIQ3KLFkqf2NrjIeqG5n0R3qb7HaLi7hsHSvPpyInctszSGX97WP2JxjmhcxQ851xX1C09O8sbPUB5O-vOpM7JrUECWcnVHqnZ0A5Fn_faLRpw2bQRBfuomxkxmZPyuggmI_4-pTCt9dnW2jGunO12EXyvlbuErCFeD-M6FW"
-            alt="Abstract digital neural network"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 hero-gradient" />
-        </div>
+      <section className="relative min-h-[90vh] flex flex-col justify-center items-start px-8 md:px-24 overflow-hidden">
+        {/* Background image — 10-15% opacity */}
+        <img
+          src={heroBg}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover object-center z-0"
+          style={{ opacity: 0.12 }}
+        />
+        {/* Navy overlay */}
+        <div className="absolute inset-0 z-10" style={{ background: 'linear-gradient(160deg, #0B1221 60%, #0d1a2e 100%)' }} />
 
         {/* Content */}
-        <div className="relative z-20 max-w-4xl">
-          <div className="flex items-center gap-4 mb-6">
+        <div className="relative z-20 max-w-screen-xl w-full mx-auto">
+          <div
+            className="flex items-center gap-4 mb-6"
+            style={{ animation: 'fadeUp 0.6s ease both', animationDelay: '0.1s' }}
+          >
             <span className="h-[1px] w-12 bg-primary" />
             <span className="font-label text-primary uppercase tracking-[0.3em] text-xs">
               AI Consulting for SMBs
             </span>
           </div>
 
-          <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-on-surface leading-[0.9] mb-8">
+          <h1
+            className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-on-surface leading-[0.9] mb-8 max-w-4xl"
+            style={{ animation: 'fadeUp 0.7s ease both', animationDelay: '0.2s' }}
+          >
             Transform Your <br /> Operations with <br />
             <span className="text-primary">AI That Delivers Results.</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-on-surface-variant font-light max-w-2xl mb-12 leading-relaxed">
+          <p
+            className="text-lg md:text-xl text-on-surface-variant font-light max-w-2xl mb-12 leading-relaxed"
+            style={{ animation: 'fadeUp 0.7s ease both', animationDelay: '0.35s' }}
+          >
             From uncovering hidden opportunities to building real automations your team
             actually uses, we partner with you every step of the way. No jargon, no
             bloat — just measurable results.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div
+            className="flex flex-col sm:flex-row gap-4"
+            style={{ animation: 'fadeUp 0.7s ease both', animationDelay: '0.5s' }}
+          >
             <Link
               to="/contact"
               className="bg-primary text-on-primary px-10 py-4 font-label font-bold uppercase tracking-widest text-sm hover:brightness-110 transition-all text-center"
@@ -108,9 +118,9 @@ export default function Home() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30" style={{ animation: 'fadeUp 1s ease both', animationDelay: '0.9s' }}>
           <span className="font-label text-[10px] tracking-[0.2em] uppercase">Scroll</span>
-          <div className="w-[1px] h-10 bg-outline-variant" />
+          <div className="w-[1px] h-10 bg-outline-variant animate-pulse" />
         </div>
       </section>
 
@@ -118,7 +128,7 @@ export default function Home() {
       <section className="bg-surface-container-lowest border-y border-outline-variant/10 py-10 px-8 md:px-24">
         <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-around gap-8 md:gap-0">
           {stats.map(({ value, label }) => (
-            <div key={label} className="flex flex-col items-center md:items-start">
+            <div key={label} className="flex flex-col items-center">
               <span className="font-headline text-4xl font-bold text-primary tracking-tighter">
                 {value}
               </span>
