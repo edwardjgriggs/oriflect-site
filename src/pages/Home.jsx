@@ -58,8 +58,8 @@ export default function Home() {
     <div className="pt-[72px]">
       {/* ── Hero ── */}
       <section className="relative min-h-[90vh] flex flex-col justify-center items-start px-8 md:px-24 overflow-hidden grid-bg" style={{ backgroundImage: `url(${heroBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        {/* Full overlay to keep image very subtle */}
-        <div className="absolute inset-0 bg-surface/88 z-10" />
+        {/* Navy gradient overlay — image barely visible beneath */}
+        <div className="absolute inset-0 z-10" style={{ background: 'linear-gradient(135deg, #0B1221 85%, rgba(11,18,33,0.96) 100%)' }} />
 
         {/* Background image */}
         <div className="absolute right-0 top-0 w-full md:w-1/2 h-full opacity-40 z-0">
