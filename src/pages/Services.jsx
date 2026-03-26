@@ -179,8 +179,8 @@ function ServiceSection({ svc, idx }) {
               : 'order-2 border-l'
           }`}
         >
-          <div className="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
-            <span className="material-symbols-outlined text-5xl md:text-9xl">{svc.panelIcon}</span>
+          <div className="absolute top-4 right-4 opacity-10 pointer-events-none">
+            <span className="material-symbols-outlined text-7xl">{svc.panelIcon}</span>
           </div>
           <h3 className="font-label text-xs text-on-surface-variant uppercase tracking-[0.2em] mb-10">
             {svc.panelTitle}
@@ -188,11 +188,11 @@ function ServiceSection({ svc, idx }) {
 
           {/* Steps */}
           {svc.steps && (
-            <div className={`space-y-10 ${isEven ? 'text-right' : ''}`}>
+            <div className="space-y-10">
               {svc.steps.map((s) => (
                 <div
                   key={s.n}
-                  className={`flex gap-6 group ${isEven ? 'flex-row-reverse' : ''}`}
+                  className="flex gap-6 group"
                 >
                   <span className="font-headline text-4xl font-bold text-outline-variant/30 group-hover:text-primary transition-colors flex-shrink-0">
                     {s.n}
@@ -343,7 +343,7 @@ export default function Services() {
                   <select
                     value={formData.service}
                     onChange={e => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/30 py-3 px-0 text-on-background focus:ring-0 focus:border-primary transition-colors appearance-none outline-none"
+                    className="w-full bg-surface-container border border-outline-variant/30 py-3 px-3 text-on-background focus:ring-0 focus:border-primary transition-colors outline-none rounded-none"
                   >
                     <option>AI Discovery Audit</option>
                     <option>AI Implementation</option>
