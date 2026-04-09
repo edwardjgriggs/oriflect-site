@@ -1,16 +1,30 @@
-# React + Vite
+# Oriflect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**AI consulting for small businesses — adopt AI safely, govern it responsibly.**
 
-Currently, two official plugins are available:
+[oriflect.com](https://oriflect.com) · [Live Preview](https://oriflect-site.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Oriflect helps small and mid-size businesses navigate AI adoption with practical strategy, policy development, and workflow automation — without the enterprise price tag.
 
-## React Compiler
+## About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is the marketing site for Oriflect, built with React + Vite and deployed on Vercel.
 
-## Expanding the ESLint configuration
+### Services we offer
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **AI Governance & Policy** — Custom AI use policies aligned with your industry and risk profile
+- **Workflow Automation** — n8n, Make.com, and Claude API integrations that save hours per week
+- **Security-First AI Adoption** — Evaluate tools, set guardrails, and train your team
+
+## Tech Stack
+
+- React + Vite
+- Tailwind CSS
+- Vercel (hosting & deployment)
+
+## Author
+
+**Edward Griggs** — Founder & Principal Consultant
+CompTIA Security+ · AI Security Researcher
+
+[LinkedIn](https://linkedin.com/in/edward-griggs/) · [edwardgriggs.com](https://edwardgriggs.com)
